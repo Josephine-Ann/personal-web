@@ -1,0 +1,100 @@
+#landing-image {
+    background-image: linear-gradient( 
+90deg
+ , rgba(255, 255, 255, 0.1) 1%, rgb(12 16 16 / 47%) 50%), url(landing-image.jpeg);
+    width: 375px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+#landing-image-galaxy {
+    background-image: linear-gradient( 
+90deg
+ , rgba(255, 255, 255, 0.1) 1%, rgb(12 16 16 / 47%) 50%), url(landing-image-galaxy-fold.jpeg);
+    width: 247.5px;
+    min-width: 247.5px;
+    height: 330px;
+    min-height: 330px;
+    margin-top: 33px;
+}
+
+#landing-image-iphonemax {
+    background-image: linear-gradient( 
+90deg
+ , rgba(255, 255, 255, 0.1) 1%, rgb(12 16 16 / 47%) 50%), url(landing-image-galaxy-fold.jpeg);
+    width: 247.5px;
+    min-width: 247.5px;
+    height: 330px;
+    min-height: 330px;
+    margin-top: 33px;
+}
+#landing-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+#blue-structure {
+    width: 288.77px;
+    height: 232.47px;
+    margin: 0px 46px 46px 142px;
+    position: absolute;
+}
+
+#blue-structure-galaxy {
+    width: 190.5882px;
+    height: 153.4302px;
+    margin: 0px 30.360000000000003px 30.360000000000003px 93.72px;
+    position: absolute;
+}
+#blue-structure-iphonemax {
+    width: 190.5882px;
+    height: 153.4302px;
+    margin: 0px 30.360000000000003px 30.360000000000003px 93.72px;
+    position: absolute;
+}
+#yellow-structure {
+    margin: 360px 10px 10px 136px;
+    position: absolute;
+}
+
+#yellow-structure-galaxy {
+    margin: 237.60000000000002px 6.6000000000000005px 6.6000000000000005px 89.76px;
+    position: absolute;
+}
+#yellow-structure-iphonemax {
+    margin: 237.60000000000002px 6.6000000000000005px 6.6000000000000005px 89.76px;
+    position: absolute;
+}
+#yellow-structure-medium {
+    position: absolute;
+    margin: 336px 0px 0px 0px;
+}
+
+#yellow-structure-medium-iphonemax {
+    position: absolute;
+    margin: 221.76000000000002px 0px 0px 0px;
+}
+#yellow-structure-medium-galaxy {
+    position: absolute;
+    margin: 221.76000000000002px 0px 0px 0px;
+}
+
+#blue-structure-medium {
+    position: absolute;
+    margin: 205px 0px 0px 110px;
+}
+
+#blue-structure-medium-iphonemax {
+    position: absolute;
+    margin: 135.3px 0px 0px 72.60000000000001px;
+}
+#blue-structure-medium-galaxy {
+    position: absolute;
+    margin: 135.3px 0px 0px 72.60000000000001px;
+}
+
+#pink-structure {
+    position: absolute;
+}

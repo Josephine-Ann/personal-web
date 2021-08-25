@@ -1,0 +1,57 @@
+.card-aboutme {
+    margin: 6px 6px;
+    width: 240px;
+    height: 330px;
+    background-color: #99cfbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#block-cards-aboutme {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 780px;
+}
+
+#page-aboutme {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-aboutme-photo{
+    width: 210px;
+    height: 210px;
+    background-color: grey;
+    margin-top: 10px;    
+    margin: 20px;
+}
+
+.card-aboutme-title {
+    margin: 10px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+#flashcards-image {
+    background-image:  url('flashcard-app.jpeg');;
+}
+
+#github-image {
+    background-image: url('github.jpeg');;
+}
+
+#github-image {
+    background-image: url('github.jpeg');;
+}
+
+#css-practice-image {
+    background-image: url('bells.png');;
+}
+
+a {
+    text-decoration: none;
+}

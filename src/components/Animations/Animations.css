@@ -1,0 +1,104 @@
+.animation-link {
+    width: 350px;
+    height: 500px;
+    background-color: #99cfbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.animation-link-galaxy {
+    width: 231px;
+    height: 330px;
+    background-color: #99cfbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.animation-link-iphonemax {
+    width: 231px;
+    height: 330px;
+    background-color: #99cfbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.animation-link-title {
+    color: black;
+}
+
+.animation-link-image {
+    width: 300px;
+    height: 300px;
+}
+
+.animation-link-image-galaxy {
+    width: 198px;
+    height: 198px;
+}
+.animation-link-image-iphonemax {
+    width: 198px;
+    height: 198px;
+}
+
+#first-animation-link-image {
+    background-image: linear-gradient(
+        90deg
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow.jpg');;
+    margin: 20px;
+}
+
+#first-animation-link-image-galaxy {
+    background-image: linear-gradient(
+        90deg
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow.jpg');;
+    margin: 13.200000000000001px;
+}
+#first-animation-link-image-iphonemax {
+    background-image: linear-gradient(
+        90deg
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow.jpg');;
+    margin: 13.200000000000001px;
+}
+#second-animation-link-image {
+    background-image: linear-gradient(
+        90deg
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('lift.jpg');;
+    margin: 20px;
+}
+
+#animation-page {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#animation-page-iphonemax {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 690px;
+    justify-content: space-around;
+    align-items: center;
+}
+#animation-page-galaxy {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 690px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#first {
+    order: 1
+}

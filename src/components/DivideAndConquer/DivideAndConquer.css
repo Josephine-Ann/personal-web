@@ -1,0 +1,274 @@
+body {
+    margin:0px;
+}
+
+#hidden {
+    display: none;
+}
+
+#button-start {
+    position: absolute;
+    top: 70vh;
+    padding: 1vh 3vw 1vh 3vw;
+    right: 25vw;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+#button-paused {
+    position: absolute;
+    top: 70vh;
+    padding: 1vh 3vw 1vh 3vw;
+    right: 25vw;
+    background-color: #cfb2e0;
+    border: none;
+    color: white;
+}
+
+p {
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portrait {
+    position: absolute;
+    margin-top: 31.2px;
+    margin-left: 270.40000000000003px;
+}
+
+.silhouette {
+    margin-top: 3.25px;
+    position: absolute;
+}
+
+.hidden {
+    display: none;
+}
+
+#num {
+    /* margin-top: 30vh; */
+    font-size: 65px;
+    color: #422b3bd6;
+    position: absolute;
+    z-index: 2;
+    top: 550px;
+    left: 250px;
+}
+
+.fa-arrow-down {
+    position: absolute;
+    margin-left: 90px;
+    /* margin-left: 90px; */
+    top: 130px;
+}
+
+.fa-arrow-up {
+    /* margin-left: 450px; */
+    top: 130px;
+    position: absolute;
+}
+
+.fas {
+    font-size: 80px;
+    color: #422b3bab;
+}
+
+.slowly-appear {
+    display: flex;
+    animation-name: slowly-appear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slowly-appear {
+    0%  {opacity: 0;}
+    10%  {opacity: 0.1;}
+    20%  {opacity: 0.2;}
+    30%  {opacity: 0.3;}
+    40%  {opacity: 0.4;}
+    50%  {opacity: 0.5;}
+    60%  {opacity: 0.6;}
+    70%  {opacity: 0.7;}
+    80%  {opacity: 0.8;}
+    90%  {opacity: 0.9;}
+    100%  {opacity: 1;}
+  } 
+
+.background-man {
+    position: absolute;
+    z-index: 3;
+    margin-left: 20vw;
+}
+
+.layout {
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+    height: 86vh;
+    background-color: white;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 40% 25%, 53% 25%, 53% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.layout-animation-finished {
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-color: white;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); 
+}
+
+.layout--lift-finished {
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+    background-color: purple;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.lift-fixed {
+    top: 395px;
+    left: 590px;
+    position: absolute;
+    z-index: 2;
+  }
+
+.finished {
+    animation-name: disappear;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes disappear {
+    0%  {opacity: 1;}
+    10%  {opacity: 0.9;}
+    20%  {opacity: 0.8;}
+    30%  {opacity: 0.7;}
+    40%  {opacity: 0.6;}
+    50%  {opacity: 0.5;}
+    60%  {opacity: 0.4;}
+    70%  {opacity: 0.3;}
+    80%  {opacity: 0.2;}
+    90%  {opacity: 0.1;}
+    100%  {opacity: 0;}
+  } 
+
+.animation-background {
+    display: flex;
+    position: absolute;
+    top: -350vh;
+    margin-left: 40%;
+    z-index: -1;
+}
+
+.animation-background__animated {
+    display: flex;
+    position: absolute;
+    animation-name: lift;
+    animation-duration: 5.5s;
+    top: -350vh;
+    margin-left: 40%;
+    z-index: -1;
+}
+
+@keyframes lift {
+    0%  {top: 0vh;}
+    5%  {top: -19vh;}
+    15%  {top: -36vh;}
+    20%  {top: -54vh;}
+    25%  {top: -72vh;}
+    30%  {top: -90vh;}
+    35%  {top: -108vh;}
+    40%  {top: -127vh;}
+    45%  {top: -142vh;}
+    50%  {top: -161vh;}
+    55%  {top: -180vh;}
+    60%  {top: -199vh;}
+    65%  {top: -218vh;}
+    70%  {top: -237vh;}
+    75%  {top: -255vh;}
+    80%  {top: -273vh;}
+    85%  {top: -292vh;}
+    90%  {top: -311vh;}
+    95%  {top: -330vh;}
+    100% {top: -350vh;}
+  } 
+
+
+
+
+
+
+
+.top {
+    position: absolute;
+    width: 100vw;
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    background-color: white;
+}
+
+#card--writing {
+    left: 150px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+#card--no-writing {
+    left: 150px;
+    z-index: 1;
+}
+
+
+#card--no-writing__animated {
+    left: 150px;
+    animation-iteration-count: 20;
+    animation-name: over;
+    animation-duration: 4s;
+    z-index: 1;
+}
+
+#card--words {
+    position: absolute;
+    max-width: 200px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+ @keyframes over {
+    0%   {margin-left: 0px;}
+    10% {margin-left: 840px;}
+    20%  {margin-left: 840px;}
+    30%  {margin-left: 840px;}
+    35%  {margin-left: 840px;}
+    40%  {margin-left: 840px;}
+    45%  {margin-left: 840px;}
+    50%  {margin-left: 840px;}
+    55%  {margin-left: 840px;}
+    60%  {margin-left: 840px;}
+    90%  {margin-left: 0px;}
+    91%  {margin-left: 0px;}
+    92%  {margin-left: 0px;}
+    93%  {margin-left: 0px;}
+    94%  {margin-left: 0px;}
+    95%  {margin-left: 0px;}
+    96%  {margin-left: 0px;}
+    97%  {margin-left: 0px;}
+    98%  {margin-left: 0px;}
+    99%  {margin-left: 0px;}
+    100% {margin-left: 0px;}
+} 

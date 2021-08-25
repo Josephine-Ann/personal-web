@@ -1,0 +1,67 @@
+[
+    {
+        "text": "card",
+        "liftFixed": "lift-fixed",
+        "animationBackground": "animation-background",
+        "layout": "layout",
+        "man": "background-man hidden",
+        "arrowUp": "fas fa-arrow-up hidden",
+        "arrowDown": "fas fa-arrow-down hidden",
+        "textDC": "Imagina que estás en un ascensor..."
+    },
+    {
+        "0": "card--no-writing__animated",
+        "1": "card--no-writing"
+    },
+    {
+        "0": "card",
+        "1": "card finished"
+    },
+    {
+        "0": "lift-fixed",
+        "1": "lift-fixed finished"
+    },
+    {
+        "0": "animation-background",
+        "1": "animation-background__animated",
+        "2": "animation-background finished"
+    },
+    {
+        "0": "layout",
+        "1": "layout-animation-finished"
+    },
+    {
+        "0": "background-man hidden",
+        "1": "background-man slowly-appear"
+    },
+    {
+        "0": "fas fa-arrow-up hidden",
+        "1": "fas fa-arrow-up"
+    },
+    {
+        "0": "fas fa-arrow-down hidden",
+        "1": "fas fa-arrow-down"
+    },
+    {
+        "0": "Y estás intentando encontrar algo...",
+        "1": "El problema es que solo sabes el número de la planta en binario.",
+        "2": "Y no entiendes binario.",
+        "3": "En cada planta, hay un hombre...",
+        "4": "Él tiene un cartel con el número de la planta en binario...",
+        "5": "Pero no habla...",
+        "6": "Él explica dónde te tienes que ir...",
+        "7": "Señalando con la mano...",
+        "8": "¿Qué haces?",
+        "9": "¿Simplemente compruebas cada planta?",
+        "10": "¿O podrías llegar ahí más fácilmente...",
+        "11": "Eligiendo un punto en el medio?",
+        "12": "Si él señala para abajo o para arriba...",
+        "13": "..sabrás a dónde ir...",
+        "14": "Y así quitas la mitad de las posibilidades...",
+        "15": "Esto es la lógica de Divide and Conquer...",
+        "16": "Un patrón de algoritmos que permite...",
+        "17": "que encontremos información más rápidamente...",
+        "18": "En una lista ordenada...",
+        "19": "Imagina que estás en un ascensor..."
+    }
+]

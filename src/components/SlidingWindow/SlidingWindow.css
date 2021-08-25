@@ -1,0 +1,139 @@
+.cow-rows {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}
+
+#panel-text {
+    width: 350px;
+    height: 400px;
+    background-color: #dfa7ce99;
+    position: absolute;
+    z-index: 1;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel-text-galaxy {
+    width: 231px;
+    height: 264px;
+    background-color: #dfa7ce99;
+    position: absolute;
+    z-index: 1;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel-text-iphonemax {
+    width: 231px;
+    height: 264px;
+    background-color: #dfa7ce99;
+    position: absolute;
+    z-index: 1;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#panel-text-animated-galaxy {
+    width: 231px;
+    height: 264px;
+    background-color: rgb(223, 167, 206);;
+    position: absolute;
+    z-index: 1;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel-text-animated-iphonemax {
+    width: 231px;
+    height: 264px;
+    background-color: rgb(223, 167, 206);;
+    position: absolute;
+    z-index: 1;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#panel-text-animated {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(223, 167, 206);;
+    position: absolute;
+    z-index: 1;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#panel-text-hidden {
+    display: none;
+}
+
+#hidden {
+    display: none;
+}
+
+.p-text {
+    font-size: 18px;
+    width: 240px;
+    padding: 0px 10px 0px 10px;
+}
+
+.p-text-iphonemax {
+    font-size: 11.88px;
+    width: 158.4px;
+    padding: 0px 6.6px 0px 6.6px;
+}
+
+.p-text-galaxy {
+    font-size: 11.88px;
+    width: 158.4px;
+    padding: 0px 6.6px 0px 6.6px;
+}
+
+
+#sliding-button {
+    height: 40px;
+    width: 140px;
+}
+
+#sliding-button-galaxy {
+    height: 26.400000000000002px;
+    width: 92.4px;
+}
+
+#sliding-button-iphonemax {
+    height: 26.400000000000002px;
+    width: 92.4px;
+}
+
+#background {
+    display: flex;
+    justify-content: space-around;
+}

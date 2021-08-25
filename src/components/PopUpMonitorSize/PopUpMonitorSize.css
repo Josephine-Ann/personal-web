@@ -1,0 +1,23 @@
+.pop-up-card {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#card-pop-up {
+    width: 90%;
+    height: 80%;
+    background-color: #91cbb6;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#text-pop-up {
+    width: 80%;
+}
