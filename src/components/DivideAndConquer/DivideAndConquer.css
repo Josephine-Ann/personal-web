@@ -1,30 +1,59 @@
-body {
-    margin:0px;
+
+@media (min-width: 1280px) and (min-height: 800px) {
+    body {
+        overflow: hidden; 
+        position: fixed;
+    }
 }
 
 #hidden {
     display: none;
 }
 
+@media (min-width: 1440px) {
+
 #button-start {
     position: absolute;
-    top: 70vh;
-    padding: 1vh 3vw 1vh 3vw;
-    right: 25vw;
+    top: 560px;
+    padding: 8px 39px 8px 39px;
+    right: 269px;
     background-color: #794499;
     border: none;
     color: white;
 }
-
 #button-paused {
     position: absolute;
     top: 70vh;
-    padding: 1vh 3vw 1vh 3vw;
-    right: 25vw;
+    padding: 8px 39px 8px 39px;
+    right: 269px;
     background-color: #cfb2e0;
     border: none;
     color: white;
 }
+}
+
+@media (max-width: 1439px) {
+    #button-start {
+        position: absolute;
+        top: 560px;
+        padding: 8px 39px 8px 39px;
+        right: 169px;
+        background-color: #794499;
+        border: none;
+        color: white;
+    }
+    #button-paused {
+        position: absolute;
+        top: 560px;
+        padding: 8px 39px 8px 39px;
+        right: 169px;
+        background-color: #cfb2e0;
+        border: none;
+        color: white;
+    }
+}
+
+
 
 p {
     margin: 0px;
@@ -105,10 +134,11 @@ p {
 .layout {
     justify-content: space-around;
     display: flex;
-    width: 100vw;
-    height: 86vh;
+    width: 1440px;
+    height: 688px;
     background-color: white;
     z-index: 1;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 40% 25%, 53% 25%, 53% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
     clip-path: polygon(0% 0%, 0% 100%, 40% 100%, 40% 25%, 53% 25%, 53% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
 }
 
@@ -163,7 +193,7 @@ p {
     display: flex;
     position: absolute;
     top: -350vh;
-    margin-left: 40%;
+    margin-left: 576px;
     z-index: -1;
 }
 
@@ -173,7 +203,7 @@ p {
     animation-name: lift;
     animation-duration: 5.5s;
     top: -350vh;
-    margin-left: 40%;
+    margin-left: 576px;
     z-index: -1;
 }
 
@@ -236,10 +266,11 @@ p {
 
 #card--no-writing__animated {
     left: 150px;
-    animation-iteration-count: 20;
     animation-name: over;
     animation-duration: 4s;
+    animation-iteration-count: 20;
     z-index: 1;
+    background-color: white;
 }
 
 #card--words {
@@ -251,10 +282,10 @@ p {
 
  @keyframes over {
     0%   {margin-left: 0px;}
-    10% {margin-left: 840px;}
-    20%  {margin-left: 840px;}
-    30%  {margin-left: 840px;}
-    35%  {margin-left: 840px;}
+    10% {margin-left: 0px; }
+    20%  {margin-left: 0px;}
+    30%  {margin-left: 0px;}
+    35%  {margin-left: 0px;}
     40%  {margin-left: 840px;}
     45%  {margin-left: 840px;}
     50%  {margin-left: 840px;}
@@ -272,3 +303,10 @@ p {
     99%  {margin-left: 0px;}
     100% {margin-left: 0px;}
 } 
+
+#end-cover {
+    background-color: white;
+    width: 100vw;
+    height: 6vh;
+    margin: 0px;
+}

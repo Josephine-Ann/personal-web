@@ -21,7 +21,7 @@ export const AboutMe = () => {
                 <a href="https://github.com/Josephine-Ann">
                     <div className="card-aboutme">
                         <div id="github-image" className="card-aboutme-photo"></div>
-                        <p className="card-aboutme-title">GitHub</p>
+                        <p className="card-aboutme-title">HackerRank Algorithms</p>
                     </div>
                 </a>
                 <a href="https://infallible-dubinsky-dbbfe7.netlify.app/">

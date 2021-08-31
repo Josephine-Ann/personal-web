@@ -1,0 +1,106 @@
+#explanation-d-c {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    margin-left: 150px;
+    /* justify-content: space-between; */
+}
+
+#card-cover-explanation {
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 400px;
+    animation-name: overlay;
+    animation-duration: 4s;
+    animation-iteration-count: 20;
+    z-index: -1;
+}
+
+@keyframes overlay {
+    0%   {margin-left: 0px;}
+    10% {margin-left: 0px}
+    20%  {margin-left: 0px;}
+    30%  {margin-left: 0px;}
+    35%  {margin-left: 840px;}
+    40%  {margin-left: 840px;}
+    45%  {margin-left: 840px;}
+    50%  {margin-left: 840px;}
+    55%  {margin-left: 840px;}
+    60%  {margin-left: 840px;}
+    90%  {margin-left: 840px;}
+    91%  {margin-left: 840px;}
+    92%  {margin-left: 840px;}
+    93%  {margin-left: 840px;}
+    94%  {margin-left: 840px;}
+    95%  {margin-left: 0px;}
+    96%  {margin-left: 0px;}
+    97%  {margin-left: 0px;}
+    98%  {margin-left: 0px;}
+    99%  {margin-left: 0px;}
+    100% {margin-left: 0px;}
+} 
+
+#explanation-text-dc {
+    min-width: 350px;
+    max-width: 350px;
+    margin-top: 70px;
+    left: 400px;
+    position: absolute;
+    z-index: -2;
+}
+
+.explanation-bar {
+    width: 200px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.explanation-array-items {
+    font-size: 30px;
+    color: rebeccapurple;
+}
+
+#explanation-bar-2 {
+    margin-left: 27vw;
+}
+
+#explanation-midway {
+    margin-left: 8vw;
+    color: rebeccapurple;
+    position: absolute;
+    top: 47.6vh;
+    display: flex;
+    z-index: 5;
+}
+
+.explanation-midway-writing {
+    font-size: 80px;
+}
+
+#explanation-midway-woman  {
+    position: absolute;
+    bottom: 45px;
+    margin-left: 25px;
+}
+
+.fa-cut {
+    transform: rotateY(180deg);
+
+}
+
+#code  {
+    position: absolute;
+    /* left: 450px; */
+    right: 70px;
+    top: 140px;
+    font-size: 15px;
+}
+.snippet-dc {
+    margin-top: 10px;
+}
+
+

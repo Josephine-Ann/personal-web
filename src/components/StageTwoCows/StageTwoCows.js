@@ -24,14 +24,16 @@ export const StageTwoCows = () => {
             maxWeight,
             stageTwoLine,
             minus,
-            plus
+            plus,
+            cowInMotion
         },
+        redirectSlidingWindow
     } = useContext(InfoContext);
 
     return (
         <div className={(!(cowStages === 2) && "two-hidden")}>
             <div id="texts-about-cows">
-                <p id="stageTwoLine" className="small-writing">{stageTwoLineOne}{totalWeight}{stageTwoLineTwo}</p>
+                <p id={(cowStages === 2) && "stageTwoLine"} className="small-writing">{stageTwoLineOne}{totalWeight}{stageTwoLineTwo}</p>
                 <p className="small-writing" id={minus}>{(firstCow.includes("first-cow")) && ("-" + singleWeightOne)}</p>
                 <p className="small-writing" id={plus}>{(thirdCow.includes("hidden-three")) && ("+" + singleWeightThree)}</p>
             </div>
@@ -55,6 +57,9 @@ export const StageTwoCows = () => {
                         {cowToDisplayP3 === "2" && <CowTwo />}
                         {cowToDisplayP3 === "3" && <CowThree />}
                     </div>
+                </div>
+                <div className={(!cowInMotion && "two-hidden") || "button-container"}>
+                    <button className="button-stop" onClick={() => redirectSlidingWindow(cowStages + 1)}>Continue</button>
                 </div>
             </div>
         </div>

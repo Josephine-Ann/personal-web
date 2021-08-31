@@ -4,7 +4,7 @@
  , rgba(255, 255, 255, 0.1) 1%, rgb(12 16 16 / 47%) 50%), url(landing-image.jpeg);
     width: 375px;
     height: 500px;
-    margin-top: 50px;
+    margin-top: 1.8181818181818181vh;
 }
 
 #landing-image-galaxy {
@@ -33,6 +33,13 @@
     justify-content: space-around;
     align-items: center;
     width: 100vw;
+}
+
+#all-landing-page {
+    height: 86vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #blue-structure {
@@ -98,3 +105,32 @@
 #pink-structure {
     position: absolute;
 }
+
+#links-contact {
+    font-size: 5vw;
+    margin-top: 5vh;
+    width: 31vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links-contact-galaxy {
+    font-size: 13vw;
+    margin-top: 7vh;
+    width: 55vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links-contact-iphonemax {
+    font-size: 7vw;
+    margin-top: 7vh;
+    width: 37vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #91cbb6;
+}
+

@@ -721,6 +721,7 @@
     max-width: 80%;
     height: 2.083333333333333%;
     min-height: 2.083333333333333%;
+    animation-fill-mode: forwards;
   }
 
   @media (max-width: 414px) {
@@ -731,17 +732,34 @@
 
    @keyframes fade-out {
     0%  {opacity: 0;}
+    3%  {opacity: 0;}
     10%  {opacity: 0;}
-    20%  {opacity: 1;}
+    20%  {opacity: 0; }
     30%  {opacity: 1;}
-    40%  {opacity: 1;}
+    45%  {opacity: 1; }
     50%  {opacity: 1;}
-    60%  {opacity: 0;}
+    60%  {opacity: 1;}
     70%  {opacity: 0;}
     80%  {opacity: 0;}
     90%  {opacity: 0;}
     100%  {opacity: 0;}
   }  
 
+  .button-container {
+    order: -1;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
+.button-stop {
+  height: 31px;
+  width: 130px;
+  font-size: 17px;
+  background-color: #794499;
+  color: white;
+  text-decoration: none;
+  border: none;
+}
 

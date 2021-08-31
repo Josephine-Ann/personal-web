@@ -59,13 +59,13 @@
 #first-animation-link-image-galaxy {
     background-image: linear-gradient(
         90deg
-        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow.jpg');;
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow-smaller.jpg');;
     margin: 13.200000000000001px;
 }
 #first-animation-link-image-iphonemax {
     background-image: linear-gradient(
         90deg
-        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow.jpg');;
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('cow-smaller.jpg');;
     margin: 13.200000000000001px;
 }
 #second-animation-link-image {
@@ -75,7 +75,27 @@
     margin: 20px;
 }
 
+#second-animation-link-image-galaxy {
+    background-image: linear-gradient(
+        90deg
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('lift-smaller.jpg');;
+    margin: 20px;
+}
+
+#second-animation-link-image-iphonemax {
+    background-image: linear-gradient(
+        90deg
+        , rgba(255, 255, 255, 0.1) 1%, rgba(163, 188, 193, 0.2) 50%), url('lift-smaller.jpg');;
+    margin: 20px;
+}
+
 #animation-page {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+}
+
+#animation-page-all {
     display: flex;
     width: 100vw;
     justify-content: space-around;
