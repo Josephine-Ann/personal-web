@@ -12,10 +12,7 @@ export function Header() {
     const {
         state: {
             leaf,
-            links,
-            computer,
-            galaxyFold,
-            iPhoneMax
+            links
         },
         cancelAnimations
     } = useContext(InfoContext);

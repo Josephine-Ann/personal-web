@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react';
 import SlidingWindowState from './SlidingWindowState.json';
 import DivideAndConquerState from './DivideAndConquerState.json';
 
@@ -23,6 +22,9 @@ var firstCowArrayIphoneMax = SlidingWindowState[14]
 var secondCowArrayIphoneMax = SlidingWindowState[15]
 var thirdCowArrayIphoneMax = SlidingWindowState[16]
 var newClassesIphoneMax = SlidingWindowState[17]
+var textExplanation = SlidingWindowState[18]
+var codeNaive = SlidingWindowState[19]
+var codeRefactor = SlidingWindowState[20]
 
 var cardNoWritingArray = DivideAndConquerState[1]
 var divideAndConquerSingle = DivideAndConquerState[0]
@@ -33,7 +35,6 @@ var layoutArray = DivideAndConquerState[5]
 var manArray = DivideAndConquerState[6]
 var arrowUpArray = DivideAndConquerState[7]
 var arrowDownArray = DivideAndConquerState[8]
-// var explanationTextDC = DivideAndConquerState[9]
 var explanationText = DivideAndConquerState[10]
 var explanationTextNaive = DivideAndConquerState[11]
 var explanationTextRefactor = DivideAndConquerState[12]
@@ -44,7 +45,6 @@ export class InfoProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: [1, 2, 3, 4, 5],
             cardNoWritingArray: cardNoWritingArray,
             text: divideAndConquerSingle.text,
             textArray: textArray,
@@ -124,15 +124,22 @@ export class InfoProvider extends React.Component {
             distanceTwo: "",
             distanceThree: "",
             distanceOne: "",
-            hiddenThree: "",
             newClassesGalaxy: newClassesGalaxy,
             newClasses: newClasses,
             newClassesIphoneMax: newClassesIphoneMax,
             linksContact: "",
             cowInMotion: false,
             divideAndConquer: "",
-            code: [],
-            explanationDC: ""
+            code: explanationTextNaive["0"],
+            explanationDC: "",
+            SWExplanation: textExplanation[0],
+            codeSWNaive: codeNaive,
+            codeSWRefactor: codeRefactor,
+            SWExplanationSpace: "",
+            SWExplanationButtonSpace: "",
+            SWCodeSpace: "",
+            SWExplanationBottomPanel: "",
+            explanationText: explanationText["0"]
         };
     }
 
@@ -161,6 +168,9 @@ export class InfoProvider extends React.Component {
             newClasses = this.state.newClassesIphoneMax
         }
         this.setState({
+            SWExplanationBottomPanel: newClasses.SWExplanationBottomPanel,
+            SWExplanationButtonSpace: newClasses.SWExplanationButtonSpace,
+            SWExplanationSpace: newClasses.SWExplanationSpace,
             width: width,
             height: height,
             computer: isWidthComputer,
@@ -190,7 +200,8 @@ export class InfoProvider extends React.Component {
             distanceTwo: newClasses.distanceTwo,
             distanceThree: newClasses.distanceThree,
             distanceOne: newClasses.distanceOne,
-            linksContact: newClasses.linksContact
+            linksContact: newClasses.linksContact,
+            SWCodeSpace: newClasses.SWCodeSpace
         });
     };
 
@@ -243,7 +254,8 @@ export class InfoProvider extends React.Component {
         await this.delay(3.95);
         this.setState({
             textDC: this.state.textAnimationDivideAndConquer[19],
-            buttonPause: false
+            buttonPause: false,
+            divideAndConquer: ""
         })
     }
 
@@ -324,8 +336,6 @@ export class InfoProvider extends React.Component {
         this.setState({
             divideAndConquer: "two-hidden"
         })
-        this.textBack()
-        this.explanationDCtext()
     }
 
     redirectSlidingWindow = async (stage) => {
@@ -368,7 +378,6 @@ export class InfoProvider extends React.Component {
             individualCows: individualCows
         })
         await this.delay(7);
-        console.log(newClasses)
         this.setState({
             maxWeight: slidingStateSingle.maxWeight,
             weightsOfThree: weightsOfThree,
@@ -384,13 +393,9 @@ export class InfoProvider extends React.Component {
             distanceTwo: newClasses.distanceTwo,
             distanceThree: newClasses.distanceThree,
             distanceOne: newClasses.distanceOne,
-            hiddenThree: newClasses.hiddenThree,
             firstCow: slidingStateSingle.firstCow,
             secondCow: slidingStateSingle.secondCow,
             thirdCow: slidingStateSingle.thirdCow,
-            distanceTwo: newClasses.distanceOne,
-            distanceThree: newClasses.distanceThree,
-            distanceOne: newClasses.distanceOne,
             stageTwoLineOne: slidingStateSingle.stageTwoLineOne,
             stageTwoLineTwo: slidingStateSingle.stageTwoLineTwo,
             singleWeightOne: slidingStateSingle.singleWeightOne,
@@ -401,7 +406,6 @@ export class InfoProvider extends React.Component {
     }
 
     cowMovements = async (cowToDisplayP1, cowToDisplayP2, cowToDisplayP3, totalWeight, singleWeightOne, singleWeightTwo, singleWeightThree) => {
-        // debugger
         if (this.state.cowInMotion) {
             await this.delay(6)
         }
@@ -412,13 +416,11 @@ export class InfoProvider extends React.Component {
                 thirdCow: this.state.thirdCowArray["1"]
             })
         }
-        // debugger
 
         if (this.state.cowInMotion) {
 
             await this.delay(6)
         }
-        // debugger
         if (this.state.cowInMotion) {
 
             this.setState({
@@ -433,7 +435,6 @@ export class InfoProvider extends React.Component {
                 singleWeightThree: this.state.singleWeights[singleWeightThree]
             })
         }
-        // // debugger
         if (this.state.cowInMotion) {
             await this.delay(6)
         }
@@ -477,7 +478,6 @@ export class InfoProvider extends React.Component {
                 secondCow: this.state.secondCowArray["0"],
                 thirdCow: this.state.thirdCowArray["2"],
             })
-            console.log('a done')
         }
         let a = 2
         let b = 3
@@ -491,7 +491,6 @@ export class InfoProvider extends React.Component {
                 b = c
                 c = copy
                 await this.delay(0.03)
-                console.log('b done')
             } else {
                 break
             }
@@ -512,13 +511,20 @@ export class InfoProvider extends React.Component {
         })
     }
 
-    stageThree = async () => {
-        console.log("stage three")
+    stageThree = async (val) => {
+        if (val === 1) {
+            this.setState({
+                explanationText: explanationText["1"],
+                code: explanationTextRefactor["0"]
+            })
+        } else if (val === -1) {
+            this.setState({
+                explanationText: explanationText["0"],
+                code: explanationTextNaive["0"]
+            })
+        }
     }
 
-    report = (heightOutput, widthOutput) => {
-        console.log(heightOutput, widthOutput)
-    }
 
     cowAppear = async () => {
         var cows = individualCows
@@ -538,42 +544,13 @@ export class InfoProvider extends React.Component {
     }
 
     cancelAnimations = async (path) => {
-        console.log(path)
         if (path.includes("slidingwindow")) {
             this.cowsStop()
         } else if (path.includes("divide")) {
             this.textBack()
-            console.log('yo')
         }
     }
 
-    explanationDCtext = async () => {
-        // console.log(explanationTextDC)
-        // console.log(explanationTextNaive)
-        // console.log(explanationTextRefactor)
-        // var explanationTextNaive = DivideAndConquerState[11]
-        // var explanationTextRefactor = DivideAndConquerState[12]
-        for (var x = 0; x < 4; x++) {
-            await this.delay(4)
-            this.setState({
-                explanationText: explanationText[x.toString()]
-            })
-        }
-        this.setState({
-            code: explanationTextNaive
-        })
-        for (x; x < 11; x++) {
-            await this.delay(4)
-            this.setState({
-                explanationText: explanationText[x.toString()]
-            })
-            if (x === 10) {
-                this.setState({
-                    code: explanationTextRefactor
-                })
-            }
-        }
-    }
 
     render() {
         return (
@@ -588,7 +565,8 @@ export class InfoProvider extends React.Component {
                     changeTextInMotion: this.changeTextInMotion,
                     redirectSlidingWindow: this.redirectSlidingWindow,
                     cowsStop: this.cowsStop,
-                    explanationDCtext: this.explanationDCtext
+                    explanationDCtext: this.explanationDCtext,
+                    stageThree: this.stageThree
                 }}>
                 {!this.state.loading ? this.props.children : "Loading List..."}
             </InfoContext.Provider>

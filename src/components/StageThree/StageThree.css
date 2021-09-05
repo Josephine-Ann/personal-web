@@ -2,9 +2,125 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 
 .text-cow-array {
     font-size: 14px;
+}
+
+#sw-explanation-space {
+    width: 40%;
+    padding-top: 5vh;
+}
+
+#sw-explanation-button-space {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#sw-explanation-button-space button {
+    background-color: rebeccapurple;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    color: white;
+}
+
+#sw-code-space {
+    width: 30%;
+    height: 50%;
+    font-size: 14px;
+}
+
+#sw-explanation-bottom-panel {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sw-explanation-bottom-panel-galaxy {
+    font-size: 14px;
+}
+
+#sw-explanation-space-iphonemax  {
+    width: 440px;
+    height: 240.25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sw-explanation-button-space-iphonemax button {
+    background-color: rebeccapurple;
+    border: none;
+    width: 100px;
+    color: white;
+    height: 31px;
+}
+
+#sw-explanation-button-space-iphonemax {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    width: 330px;
+}
+
+#sw-code-space-iphonemax {
+    font-size: 14px;
+    width: 400px;
+}
+
+#sw-explanation-bottom-panel-iphonemax {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sw-explanation-space-galaxy p {
+    width: 250px;
+    margin: 0px;
+    padding: 18px;
+    font-size: 12px;
+}
+
+#sw-explanation-bottom-panel-galaxy button {
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+    height: 31px;
+    width: 80px;
+    margin: 0px 5px;
+}
+
+
+#sw-explanation-space-galaxy {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+#sw-explanation-bottom-panel-galaxy {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#sw-code-space-galaxy {
+    font-size: 3.3vw;
+    width: 260px;
+}
+
+#sw-explanation-button-space-galaxy {
+    order: -1;
 }

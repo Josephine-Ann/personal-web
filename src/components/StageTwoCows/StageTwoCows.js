@@ -21,8 +21,6 @@ export const StageTwoCows = () => {
             firstCow,
             secondCow,
             thirdCow,
-            maxWeight,
-            stageTwoLine,
             minus,
             plus,
             cowInMotion

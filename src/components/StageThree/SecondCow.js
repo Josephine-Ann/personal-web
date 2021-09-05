@@ -1,16 +1,9 @@
 // import './CowOne.css'
-import React, { useContext } from 'react'
-import { InfoContext } from '../../InfoProvider'
+import React from 'react'
 
 
 export const SecondCow = () => {
-    const {
-        state: {
-            computer,
-            galaxyFold,
-            iPhoneMax
-        },
-    } = useContext(InfoContext);
+
     return (
         <div>
             <div>

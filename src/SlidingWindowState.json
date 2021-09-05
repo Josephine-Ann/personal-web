@@ -206,7 +206,11 @@
         "firstCow": "first-cow-galaxy",
         "secondCow": "second-cow-galaxy",
         "thirdCow": "third-cow-galaxy",
-        "linksContact": "links-contact-galaxy"
+        "linksContact": "links-contact-galaxy",
+        "SWExplanationSpace": "sw-explanation-space-galaxy",
+        "SWExplanationButtonSpace": "sw-explanation-button-space-galaxy",
+        "SWCodeSpace": "sw-code-space-galaxy",
+        "SWExplanationBottomPanel": "sw-explanation-bottom-panel-galaxy"
     },
     {
         "animationLink": "animation-link",
@@ -235,7 +239,11 @@
         "firstCow": "first-cow",
         "secondCow": "second-cow",
         "thirdCow": "third-cow",
-        "linksContact": "links-contact"
+        "linksContact": "links-contact",
+        "SWExplanationSpace": "sw-explanation-space",
+        "SWExplanationButtonSpace": "sw-explanation-button-space",
+        "SWCodeSpace": "sw-code-space",
+        "SWExplanationBottomPanel": "sw-explanation-bottom-panel"
     },
     {
         "0": "individual-cow distance-one-iphonemax",
@@ -278,21 +286,15 @@
         "firstCow": "first-cow-iphonemax",
         "secondCow": "second-cow-iphonemax",
         "thirdCow": "third-cow-iphonemax",
-        "linksContact": "links-contact-iphonemax"
+        "linksContact": "links-contact-iphonemax",
+        "SWExplanationSpace": "sw-explanation-space-iphonemax",
+        "SWExplanationButtonSpace": "sw-explanation-button-space-iphonemax",
+        "SWCodeSpace": "sw-code-space-iphonemax",
+        "SWExplanationBottomPanel": "sw-explanation-bottom-panel-iphonemax"
     },
     {
-        "0": "This is the algorithm pattern that I learnt via Colt Steele's",
-        "1": "JavaScript Algorithms and Data Structures Masterclass.",
-        "2": "Let's take a look at how me might handle this problem without using this pattern",
-        "3": "This approach makes use of one loop nested inside another.",
-        "4": "This might not seem so bad, but imagine how many costly operations are required.",
-        "5": "Were this to be used with a lot of data,",
-        "6": "these costly operations would make our code go much more slowly.",
-        "7": "With sliding window, we use one loop to create our window, the first three cows.",
-        "8": "Then we subtract the first cow from our window and add the fourth one,",
-        "9": "to make it 'slide'.",
-        "10": "All the while, we take a note of any new maximum weight.",
-        "11": "This is much better!"
+        "0": "This is the algorithm pattern that I learnt via Colt Steele's JavaScript Algorithms and Data Structures Masterclass. Let's take a look at how me might handle this problem without using this pattern. This approach makes use of one loop nested inside another. This might not seem so bad, but imagine how many costly operations are required. Were this to be used with a lot of data, these costly operations would make our code go much more slowly.",
+        "1": "Let's take a look at sliding window. We use one loop to create our window, the first three cows. Then we subtract the first cow from our window and add the fourth one, to make it 'slide'. We keep making the window slide by repeating this action. All the while, we take a note of any new maximum weight. This is much better! There are far less operations, and ultimately this means that our code will run much more quickly."
     },
     {
         "0": "function maxSubarraySum(arr, num) {",

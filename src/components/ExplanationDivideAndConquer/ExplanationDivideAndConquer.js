@@ -8,6 +8,7 @@ import Highlight from 'react-highlight'
 
 export const ExplanationDivideAndConquer = () => {
     const {
+        stageThree,
         state: {
             divideAndConquer,
             width,
@@ -35,8 +36,10 @@ export const ExplanationDivideAndConquer = () => {
             </div>
             <div id="explanation-text-dc">
                 <p>{explanationText}</p>
-            </div>
-            <div id="card-cover-explanation">
+                <div id="explanation-text-buttons">
+                    <button onClick={() => stageThree(-1)}>Previous</button>
+                    <button onClick={() => stageThree(+1)}>Next</button>
+                </div>
             </div>
             <div id="code">
                 <Highlight className="snippet-dc" language="javascript">

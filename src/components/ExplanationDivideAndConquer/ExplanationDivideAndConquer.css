@@ -48,7 +48,11 @@
     margin-top: 70px;
     left: 400px;
     position: absolute;
-    z-index: -2;
+    z-index: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .explanation-bar {
@@ -103,4 +107,22 @@
     margin-top: 10px;
 }
 
+#explanation-text-dc button {
+    background-color: rebeccapurple;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    color: white;
+}
 
+#explanation-text-dc p {
+    height: 150px;
+    min-height: 150px;
+}
+
+#explanation-text-buttons {
+    height: 40px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
