@@ -11,7 +11,7 @@ export const PopUpMonitorSize = () => {
         }
     } = useContext(InfoContext);
     return (
-        <div id={(!(width < 1280 || height < 800) && "two-hidden")} className="pop-up-card">
+        <div id={(!(width < 1280 || height < 800) && "two-hidden")} class="pop-up-card">
             <div id="card-pop-up">
                 <div id="text-pop-up">
                     <h1>Please watch me on a bigger screen.</h1>

@@ -7,7 +7,7 @@
         "man": "background-man hidden",
         "arrowUp": "fas fa-arrow-up hidden",
         "arrowDown": "fas fa-arrow-down hidden",
-        "textDC": "Imagine that you're in a lift..."
+        "textDC": "Imagina que estás en un ascensor..."
     },
     {
         "0": "card--no-writing__animated",
@@ -43,26 +43,26 @@
         "1": "fas fa-arrow-down"
     },
     {
-        "0": "And you're trying to find something...",
-        "1": "The problem is that you only know the number of the floor in binary.",
-        "2": "And you don't understand binary.",
-        "3": "In every floor, there's a man...",
-        "4": "He has a sign with the number of the floor in binary...",
-        "5": "But he doesn't speak...",
-        "6": "He explains where you have to go...",
-        "7": "By pointing in the right direction...",
-        "8": "What do you do?",
-        "9": "Do you simply check every floor?",
-        "10": "Or could you get there more easily...",
-        "11": "By starting with the midway point?",
-        "12": "If he points up or down...",
-        "13": "..you'll know where to go...",
-        "14": "And you halve the possibilities...",
-        "15": "This is the logic of Divide and Conquer...",
-        "16": "A pattern of algorithms that allows us...",
-        "17": "to find information more quickly...",
-        "18": "In an ordered list...",
-        "19": "Imagine that you're in a lift..."
+        "0": "Y estás intentando encontrar algo...",
+        "1": "El problema es que solo sabes el número de la planta en binario.",
+        "2": "Y no entiendes binario.",
+        "3": "En cada planta, hay un hombre...",
+        "4": "Él tiene un cartel con el número de la planta en binario...",
+        "5": "Pero no habla...",
+        "6": "Él explica dónde te tienes que ir...",
+        "7": "Señalando con la mano...",
+        "8": "¿Qué haces?",
+        "9": "¿Simplemente compruebas cada planta?",
+        "10": "¿O podrías llegar ahí más fácilmente...",
+        "11": "Eligiendo un punto en el medio?",
+        "12": "Si él señala para abajo o para arriba...",
+        "13": "..sabrás a dónde ir...",
+        "14": "Y así quitas la mitad de las posibilidades...",
+        "15": "Esto es la lógica de Divide and Conquer...",
+        "16": "Un patrón de algoritmos que permite...",
+        "17": "que encontremos información más rápidamente...",
+        "18": "En una lista ordenada...",
+        "19": "Imagina que estás en un ascensor..."
     },
     {
         "0": "This is the algorithm pattern that I learnt via Colt Steele's",
@@ -104,41 +104,5 @@
         "15": "return -1;",
         "17": "}",
         "18": "]"
-    },
-    {
-        "0": "Y estás intentando encontrar algo...",
-        "1": "El problema es que solo sabes el número de la planta en binario.",
-        "2": "Y no entiendes binario.",
-        "3": "En cada planta, hay un hombre...",
-        "4": "Él tiene un cartel con el número de la planta en binario...",
-        "5": "Pero no habla...",
-        "6": "Él explica dónde te tienes que ir...",
-        "7": "Señalando con la mano...",
-        "8": "¿Qué haces?",
-        "9": "¿Simplemente compruebas cada planta?",
-        "10": "¿O podrías llegar ahí más fácilmente...",
-        "11": "Eligiendo un punto en el medio?",
-        "12": "Si él señala para abajo o para arriba...",
-        "13": "..sabrás a dónde ir...",
-        "14": "Y así quitas la mitad de las posibilidades...",
-        "15": "Esto es la lógica de Divide and Conquer...",
-        "16": "Un patrón de algoritmos que permite...",
-        "17": "que encontremos información más rápidamente...",
-        "18": "En una lista ordenada...",
-        "19": "Imagina que estás en un ascensor..."
-    },
-    {
-        "textDC": "Imagina que estás en un ascensor..."
-    },
-    {
-        "0": "Esto es el patrón de algoritmos que aprendí that en el curso de Colt Steele:",
-        "1": "JavaScript Algorithms and Data Structures Masterclass.",
-        "2": "Miramos a cómo podríamos solucionar este problema sin usar el patrón",
-        "3": "Esta manera involucra comprobar cada índice en el array hasta encontremos lo que queremos.",
-        "4": "Si tenemos una lista grande de datos, esto podría ser muy costoso y alentizar nuestro código.",
-        "5": "Sin embargo, si sabemos que nuestros datos están ordenados, deberíamos dividirlo.",
-        "6": "Y si dividimos nuestros datos, solo tenemos que comprobar la mitad,",
-        "7": "y sabremos en cuál mitad tenemos que buscar.",
-        "8": "Miremos:"
     }
 ]

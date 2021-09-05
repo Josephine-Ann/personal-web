@@ -48,9 +48,9 @@ export const LandingPage = () => {
                 </div>
             </div>
             <div id={linksContact}>
-                <a href="mailto:josephineanngeoghegan@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
-                <a href="https://github.com/Josephine-Ann"><FontAwesomeIcon icon={faGithub} /></a>
-                <a href="https://www.linkedin.com/in/josephine-geoghegan-920699b5/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                <a href="mailto:josephineanngeoghegan@gmail.com" target="_blank"><FontAwesomeIcon icon={faEnvelope} /></a>
+                <a href="https://github.com/Josephine-Ann" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.linkedin.com/in/josephine-geoghegan-920699b5/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></a>
             </div>
         </div>
     )

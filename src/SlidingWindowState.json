@@ -206,16 +206,7 @@
         "firstCow": "first-cow-galaxy",
         "secondCow": "second-cow-galaxy",
         "thirdCow": "third-cow-galaxy",
-        "linksContact": "links-contact-galaxy",
-        "cowsArrayForm": " cows-array-form-galaxy",
-        "textCowArray": "text-cow-array-galaxy",
-        "codeSlidingWindow": "code-sliding-window-galaxy",
-        "textSlidingWindow": "text-sliding-window-galaxy",
-        "paraTextSlidingWindow": "para-text-sliding-window-galaxy",
-        "buttonNextSlidingWindow": "button-next-sliding-window-galaxy",
-        "buttonNextSlidingWindowFrozen": "button-next-sliding-window-frozen-galaxy",
-        "buttonNextSlidingWindow2": "button-next-sliding-window-2-galaxy",
-        "buttonNextSlidingWindowFrozen2": "button-next-sliding-window-frozen-2-galaxy"
+        "linksContact": "links-contact-galaxy"
     },
     {
         "animationLink": "animation-link",
@@ -244,16 +235,7 @@
         "firstCow": "first-cow",
         "secondCow": "second-cow",
         "thirdCow": "third-cow",
-        "linksContact": "links-contact",
-        "cowsArrayForm": " cows-array-form",
-        "textCowArray": "text-cow-array",
-        "codeSlidingWindow": "code-sliding-window",
-        "textSlidingWindow": "text-sliding-window",
-        "paraTextSlidingWindow": "para-text-sliding-window",
-        "buttonNextSlidingWindow": "button-next-sliding-window",
-        "buttonNextSlidingWindowFrozen": "button-next-sliding-window-frozen",
-        "buttonNextSlidingWindow2": "button-next-sliding-window-2",
-        "buttonNextSlidingWindowFrozen2": "button-next-sliding-window-frozen-2"
+        "linksContact": "links-contact"
     },
     {
         "0": "individual-cow distance-one-iphonemax",
@@ -296,20 +278,21 @@
         "firstCow": "first-cow-iphonemax",
         "secondCow": "second-cow-iphonemax",
         "thirdCow": "third-cow-iphonemax",
-        "linksContact": "links-contact-iphonemax",
-        "cowsArrayForm": "cows-array-form-iphonemax",
-        "textCowArray": "text-cow-array-iphonemax",
-        "codeSlidingWindow": "code-sliding-window-iphonemax",
-        "textSlidingWindow": "text-sliding-window-iphonemax",
-        "paraTextSlidingWindow": "para-text-sliding-window-iphonemax",
-        "buttonNextSlidingWindow": "button-next-sliding-window-iphonemax",
-        "buttonNextSlidingWindowFrozen": "button-next-sliding-window-frozen-iphonemax",
-        "buttonNextSlidingWindow2": "button-next-sliding-window-2-iphonemax",
-        "buttonNextSlidingWindowFrozen2": "button-next-sliding-window-frozen-2-iphonemax"
+        "linksContact": "links-contact-iphonemax"
     },
     {
-        "0": "This is the algorithm pattern that I learnt via Colt Steele's JavaScript Algorithms and Data Structures Masterclass. We want to show why this pattern exists, and why it is better than other approaches. Let's take a look at an example of how we might handle this problem without using this pattern:",
-        "1": "This approach makes use of one loop nested inside another. This might not seem so bad, but imagine how many costly operations are required. Were this to be used with a lot of data, these costly operations would make our code go much more slowly. All the while, we take a note of any new maximum weight. This is much better!"
+        "0": "This is the algorithm pattern that I learnt via Colt Steele's",
+        "1": "JavaScript Algorithms and Data Structures Masterclass.",
+        "2": "Let's take a look at how me might handle this problem without using this pattern",
+        "3": "This approach makes use of one loop nested inside another.",
+        "4": "This might not seem so bad, but imagine how many costly operations are required.",
+        "5": "Were this to be used with a lot of data,",
+        "6": "these costly operations would make our code go much more slowly.",
+        "7": "With sliding window, we use one loop to create our window, the first three cows.",
+        "8": "Then we subtract the first cow from our window and add the fourth one,",
+        "9": "to make it 'slide'.",
+        "10": "All the while, we take a note of any new maximum weight.",
+        "11": "This is much better!"
     },
     {
         "0": "function maxSubarraySum(arr, num) {",
@@ -344,45 +327,5 @@
         "11": "}",
         "12": "return maxSum;",
         "13": "}"
-    },
-    {
-        "0": "Esto es el patrón de algoritmos que aprendí haciendo el JavaScript Algorithms and Data Structures Masterclass de Colt Steele. Queremos mostrar porqué que este patrón existe, y porqué es mejor que otras soluciones. Miremos un ejemplo de cómo podríamos solucionar este problema sin usar este patrón:",
-        "1": "Esta manera usa un bucle dentro de otro. Puede que no parezca tan mal, pero imagina cuántas operaciones costosas se requieren. Si esto si fuera a usar con muchos datos, estas operaciones costosas harían que nuestro código se fuera más lentamente. Mientras tanto, apuntamos cualquier peso que sea más que el máximo de antes. ¡Esto es mucho mejor!"
-    },
-    {
-        "0": "Hasta ahora podemos decir con certeza, el conjunto de vacas más pesado pesa",
-        "1": ".",
-        "2": "Estas tres vacas pesan ",
-        "3": ", que es la cantidad más pesada que hemos visto hasta ahora.",
-        "4": "Estas tres vacas pesan ",
-        "5": ", y eso realmente no cambia nada.",
-        "6": "¡Es el último conjunto de vacas! Ya sabemos que el conjunto más pesado de tres vacas pesa "
-    },
-    {
-        "cowToDisplayP1": "1",
-        "cowToDisplayP2": "2",
-        "cowToDisplayP3": "3",
-        "maxWeight": "3000kg",
-        "cow": "cow",
-        "buttonPause": false,
-        "textInMotion": false,
-        "cardNoWriting": "card--no-writing",
-        "totalWeight": "3000kg",
-        "cowStages": 0,
-        "stageOne": true,
-        "stageTwo": false,
-        "stageThree": false,
-        "stageTwoLineOne": "Hasta ahora podemos decir con certeza, el conjunto de vacas más pesado pesa",
-        "stageTwoLineTwo": ".",
-        "textCowsBefore1": "Imagina que queremos saber dónde la tierra es más fértil en la misma región…",
-        "textCowsBefore2": "Examinamos una selección de esa área, 1 de cada campo en una zona de 100km. Cada campo mide aproximadamente 5km de longitud.",
-        "textCowsAfter1": "Queremos saber cuál son las tres vacas varones viviendo cercas unos de los otros con el mayor peso colectivo.",
-        "textCowsAfter2": "Esto se hace basado en la lógica que esto podría ser una buena indicación de la fertilidad de la tierra en esa área.",
-        "singleWeightOne": "900kg",
-        "singleWeightTwo": "1100kg",
-        "singleWeightThree": "1000kg",
-        "firstCow": "individual-cow distance-one",
-        "secondCow": "individual-cow distance-two",
-        "thirdCow": "individual-cow distance-three"
     }
 ]

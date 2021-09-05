@@ -1,12 +1,14 @@
 import './StageOneCows.css'
 import React, { useContext } from 'react'
 import { InfoContext } from '../../InfoProvider'
+import { A } from 'hookrouter';
 import { IndividualCowOne } from '../IndividualCows/IndividualCowOne';
 import { IndividualCowTwo } from '../IndividualCows/IndividualCowTwo';
 import { IndividualCowThree } from '../IndividualCows/IndividualCowThree';
 
 export const StageOneCows = () => {
     const {
+        cowAppear,
         redirectSlidingWindow,
         state: {
             cowStages,
