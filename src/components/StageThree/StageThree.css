@@ -5,6 +5,247 @@
     padding: 0 10px;
 }
 
+.cows-array-form-galaxy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 7.392857px;
+}
+
+.cows-array-form-iphonemax {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 9.5px;
+}
+
 .text-cow-array {
     font-size: 14px;
+}
+
+.text-cow-array-iphonemax {
+    font-size: 12px;
+}
+
+.text-cow-array-galaxy {
+    font-size: 11px;
+}
+
+#text-sliding-window  {
+    width: 35vw;
+    margin-top: 9vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-sliding-window-iphonemax {
+    width: 35vw;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-sliding-window-galaxy {
+    width: 260px;
+    margin-top: 13.29709px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#para-text-sliding-window {
+    width: 460px;
+    height: 100px;
+    min-height: 100px;
+    padding-left: 68px;
+    margin-left: 120px;
+}
+
+#para-text-sliding-window-iphonemax {
+    width: 500px;
+    height: 100px;
+    min-height: 100px;
+    order: 2;
+    font-size: 14px;
+    margin-top: 7px;
+}
+#para-text-sliding-window-galaxy {
+    top: 245px;
+    width: 90vw;
+    height: 135px;
+    min-height: 135px;
+    font-size: 81%;
+    order: 2;
+    margin-top: 63.837672px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+
+.button-next-sliding-window {
+    width: 75px;
+    margin: 30px 10px;
+    height: 33px;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+.button-next-sliding-window-galaxy {
+    width: 26.785714285714285vw;
+    margin: 1.2251148545176112vw 3.571428571428571vh;
+    height: 34.053599px;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+.button-next-sliding-window-iphonemax {
+    width: 75px;
+    margin: 8px 10px;
+    height: 33px;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+
+.button-next-sliding-window-frozen {
+    width: 75px;
+    margin: 30px 10px;
+    height: 33px;
+    background-color: #b795cc;
+    border: none;
+    color: white;
+}
+
+
+.button-next-sliding-window-frozen-galaxy {
+    width: 26.785714285714285vw;
+    margin: 1.2251148545176112vw 3.571428571428571vh;
+    height: 34.053599px;
+    background-color: #b795cc;
+    border: none;
+    color: white;
+    /* display: flex; */
+}
+
+.button-next-sliding-window-frozen-iphonemax {
+    width: 75px;
+    margin: 8px 10px;
+    height: 33px;
+    background-color: #b795cc;
+    border: none;
+    color: white;
+    /* display: flex; */
+}
+
+.button-next-sliding-window-2-galaxy {
+    width: 26.785714285714285vw;
+    margin: 1.2251148545176112vw 3.571428571428571vh;
+    height: 34.053599px;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+.button-next-sliding-window-2-iphonemax {
+    width: 75px;
+    margin: 8px 10px;
+    height: 33px;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+.button-next-sliding-window-2 {
+    width: 75px;
+    margin: 30px 10px;
+    height: 33px;
+    background-color: #794499;
+    border: none;
+    color: white;
+}
+
+
+.button-next-sliding-window-frozen-2-galaxy {
+    width: 26.785714285714285vw;
+    margin: 1.2251148545176112vw 3.571428571428571vh;
+    height: 34.053599px;
+    background-color: #b795cc;
+    border: none;
+    color: white;
+}
+
+.button-next-sliding-window-frozen-2-iphonemax {
+    width: 75px;
+    margin: 8px 10px;    
+    height: 33px;
+    background-color: #b795cc;
+    border: none;
+    color: white;
+}
+
+.button-next-sliding-window-frozen-2 {
+    width: 75px;
+    margin: 30px 10px;
+    height: 33px;
+    background-color: #b795cc;
+    border: none;
+    color: white;
+}
+
+#code-sliding-window {
+    width: 40vw;
+    margin-top: 7vh;
+    font-size: 1.6vh;
+}
+
+#code-sliding-window-iphonemax {
+    width: 32vw;
+    margin-top: 30px;
+    /* display: none; */
+    position: absolute;
+    top: 350px;
+    left: 115px;
+    font-size: 12px;
+}
+
+#code-sliding-window-galaxy  {
+    width: 250px;
+    height: 326.5px;
+    position: absolute;
+    font-size: 8px;
+    top: 475px;
+    left: 14vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    /* padding-top: 145px; */
+}
+
+#text-and-code {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* gf */
+
+@media (max-width: 818px) {
+    #button-area-galaxy-iphonemax  {
+        display: flex;
+        height: 90px;
+        align-items: center;
+    }
+    #text-and-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

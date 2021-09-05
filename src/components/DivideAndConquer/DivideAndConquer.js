@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { PopUpMonitorSize } from '../PopUpMonitorSize/PopUpMonitorSize';
 import { ExplanationDivideAndConquer } from '../ExplanationDivideAndConquer/ExplanationDivideAndConquer';
+import { usePath } from 'hookrouter';
 
 export const DivideAndConquer = () => {
     const {
@@ -24,8 +25,10 @@ export const DivideAndConquer = () => {
             height
         },
         changeText,
-        textBack
+        textBack,
+
     } = useContext(InfoContext);
+    const path = usePath();
     return (
         <div>
             <div id={divideAndConquer} title="animations/divideandconquer">
@@ -45,7 +48,7 @@ export const DivideAndConquer = () => {
                     </svg>
 
                 </div>
-                <div className={(width < 1280 || height < 800) && "two-hidden"} className={man}>
+                <div className={((width < 1280 || height < 800) && "two-hidden") || man}>
                     <div id={(width < 1280 || height < 800) && "two-hidden"} className="silhouette">
                         <svg width="686.4" height="1575.6000000000001" viewBox="0 0 264 606" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -65,8 +68,7 @@ export const DivideAndConquer = () => {
                         </svg>
                     </div>
                 </div>
-
-                <div className={(width < 1280 || height < 800) && "two-hidden"} className={layout}>
+                <div className={((width < 1280 || height < 800) && "two-hidden") || layout}>
                 </div>
                 <div id={(width < 1280 || height < 800) && "two-hidden"} className={animationBackground}>
                     <svg width="275" height="3600" viewBox="0 0 275 3600" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +85,7 @@ export const DivideAndConquer = () => {
                 </div>
             </div>
             <ExplanationDivideAndConquer />
-        </div>
+        </div >
 
     )
 }

@@ -15,7 +15,7 @@ export const AboutMe = () => {
                 <a href="https://flash-app-80d14.web.app/">
                     <div className="card-aboutme">
                         <div id="flashcards-image" className="card-aboutme-photo"></div>
-                        <a className="card-aboutme-title">Flashcards Forever</a>
+                        <p className="card-aboutme-title">Flashcards Forever</p>
                     </div>
                 </a>
                 <a href="https://github.com/Josephine-Ann">

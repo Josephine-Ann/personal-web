@@ -13,10 +13,12 @@ export const ExplanationDivideAndConquer = () => {
             width,
             height,
             code,
-            explanationText
+            explanationText,
+            indexDCexplanation
         },
-
+        explanationDCtext
     } = useContext(InfoContext);
+
     return (
         <div id="explanation-d-c" className={((width < 1280 || height < 800) || divideAndConquer === "") && "two-hidden"}>
             <div className="explanation-bar">
@@ -117,6 +119,8 @@ export const ExplanationDivideAndConquer = () => {
                 </svg>
                 <p className="explanation-midway-writing">- - - - - - - - - -</p>
                 <FontAwesomeIcon className="explanation-midway-writing" icon={faCut} />
+                <button disabled={indexDCexplanation === 0 ? true : false} className={indexDCexplanation !== 0 ? "next-button-explanation-dc" : "next-button-explanation-dc-frozen"} onClick={() => explanationDCtext(-1)}>Previous</button>
+                <button disabled={indexDCexplanation === 8 ? true : false} className={indexDCexplanation !== 8 ? "next-button-explanation-dc-2" : "next-button-explanation-dc-frozen-2"} onClick={() => explanationDCtext(+1)}>Next</button>
             </div>
         </div>
     )

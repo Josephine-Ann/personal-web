@@ -21,8 +21,6 @@ export const StageTwoCows = () => {
             firstCow,
             secondCow,
             thirdCow,
-            maxWeight,
-            stageTwoLine,
             minus,
             plus,
             cowInMotion
@@ -58,7 +56,7 @@ export const StageTwoCows = () => {
                         {cowToDisplayP3 === "3" && <CowThree />}
                     </div>
                 </div>
-                <div className={(!cowInMotion && "two-hidden") || "button-container"}>
+                <div className={(cowInMotion && "two-hidden") || "button-container"}>
                     <button className="button-stop" onClick={() => redirectSlidingWindow(cowStages + 1)}>Continue</button>
                 </div>
             </div>

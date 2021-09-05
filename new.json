@@ -1,0 +1,50 @@
+[
+    {
+        "0": "Y estás intentando encontrar algo...",
+        "1": "El problema es que solo sabes el número de la planta en binario.",
+        "2": "Y no entiendes binario.",
+        "3": "En cada planta, hay un hombre...",
+        "4": "Él tiene un cartel con el número de la planta en binario...",
+        "5": "Pero no habla...",
+        "6": "Él explica dónde te tienes que ir...",
+        "7": "Señalando con la mano...",
+        "8": "¿Qué haces?",
+        "9": "¿Simplemente compruebas cada planta?",
+        "10": "¿O podrías llegar ahí más fácilmente...",
+        "11": "Eligiendo un punto en el medio?",
+        "12": "Si él señala para abajo o para arriba...",
+        "13": "..sabrás a dónde ir...",
+        "14": "Y así quitas la mitad de las posibilidades...",
+        "15": "Esto es la lógica de Divide and Conquer...",
+        "16": "Un patrón de algoritmos que permite...",
+        "17": "que encontremos información más rápidamente...",
+        "18": "En una lista ordenada...",
+        "19": "Imagina que estás en un ascensor..."
+    },
+    {
+        "textDC": "Imagina que estás en un ascensor..."
+    },
+    {
+        "0": "Esto es el patrón de algoritmos que aprendí that en el curso de Colt Steele:",
+        "1": "JavaScript Algorithms and Data Structures Masterclass.",
+        "2": "Miramos a cómo podríamos solucionar este problema sin usar el patrón",
+        "3": "Esta manera involucra comprobar cada índice en el array hasta encontremos lo que queremos.",
+        "4": "Si tenemos una lista grande de datos, esto podría ser muy costoso y alentizar nuestro código.",
+        "5": "Sin embargo, si sabemos que nuestros datos están ordenados, deberíamos dividirlo.",
+        "6": "Y si dividimos nuestros datos, solo tenemos que comprobar la mitad,",
+        "7": "y sabremos en cuál mitad tenemos que buscar.",
+        "8": "Miremos:"
+    },
+    {
+        "stageTwoLineOne": "Hasta ahora podemos decir con certeza, el conjunto de vacas más pesado pesa",
+        "stageTwoLineTwo": ".",
+        "textCowsBefore1": "Imagina que queremos saber dónde la tierra es más fértil en la misma región…",
+        "textCowsBefore2": "Examinamos una selección de esa área, 1 de cada campo en una zona de 100km. Cada campo mide aproximadamente 5km de longitud.",
+        "textCowsAfter1": "Queremos saber cuál son las tres vacas varones viviendo cercas unos de los otros con el mayor peso colectivo.",
+        "textCowsAfter2": "Esto se hace basado en la lógica que esto podría ser una buena indicación de la fertilidad de la tierra en esa área."
+    },
+    {
+        "0": "Esto es el patrón de algoritmos que aprendí haciendo el JavaScript Algorithms and Data Structures Masterclass de Colt Steele. Queremos mostrar porqué que este patrón existe, y porqué es mejor que otras soluciones. Miremos un ejemplo de cómo podríamos solucionar este problema sin usar este patrón:",
+        "1": "Esta manera usa un bucle dentro de otro. Puede que no parezca tan mal, pero imagina cuántas operaciones costosas se requieren. Si esto si fuera a usar con muchos datos, estas operaciones costosas harían que nuestro código se fuera más lentamente. Mientras tanto, apuntamos cualquier peso que sea más que el máximo de antes. ¡Esto es mucho mejor!"
+    }
+]

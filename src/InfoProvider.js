@@ -1,13 +1,17 @@
 import React from 'react'
-import { useEffect } from 'react';
 import SlidingWindowState from './SlidingWindowState.json';
 import DivideAndConquerState from './DivideAndConquerState.json';
 
 export const InfoContext = React.createContext();
 
 var slidingStateSingle = SlidingWindowState[0]
+var slidingStateSingleSpanish = SlidingWindowState[23]
 var weightsOfThree = SlidingWindowState[1]
 var stageTwoLineArray = SlidingWindowState[2]
+var stageTwoLineArraySpanish = SlidingWindowState[22]
+var explanationSW = SlidingWindowState[18]
+var explanationSWSpanish = SlidingWindowState[21]
+
 var cowArray = SlidingWindowState[3]
 var singleWeights = SlidingWindowState[4]
 var firstCowArray = SlidingWindowState[5]
@@ -23,6 +27,8 @@ var firstCowArrayIphoneMax = SlidingWindowState[14]
 var secondCowArrayIphoneMax = SlidingWindowState[15]
 var thirdCowArrayIphoneMax = SlidingWindowState[16]
 var newClassesIphoneMax = SlidingWindowState[17]
+var codeNaiveSW = SlidingWindowState[19]
+var codeRefactorSW = SlidingWindowState[20]
 
 var cardNoWritingArray = DivideAndConquerState[1]
 var divideAndConquerSingle = DivideAndConquerState[0]
@@ -33,8 +39,16 @@ var layoutArray = DivideAndConquerState[5]
 var manArray = DivideAndConquerState[6]
 var arrowUpArray = DivideAndConquerState[7]
 var arrowDownArray = DivideAndConquerState[8]
-// var explanationTextDC = DivideAndConquerState[9]
-var explanationText = DivideAndConquerState[10]
+
+// Spanish
+
+var explanationTextDCSpanish = DivideAndConquerState[13]
+var textDCSpanish = DivideAndConquerState[14]
+var explanationTextDescriptionSpanish = DivideAndConquerState[15]
+
+var explanationTextDC = DivideAndConquerState[9]
+var explanationTextDescription = DivideAndConquerState[10]
+// var explanationFirst = explanationTextDescription[0]
 var explanationTextNaive = DivideAndConquerState[11]
 var explanationTextRefactor = DivideAndConquerState[12]
 
@@ -44,7 +58,6 @@ export class InfoProvider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: [1, 2, 3, 4, 5],
             cardNoWritingArray: cardNoWritingArray,
             text: divideAndConquerSingle.text,
             textArray: textArray,
@@ -124,7 +137,6 @@ export class InfoProvider extends React.Component {
             distanceTwo: "",
             distanceThree: "",
             distanceOne: "",
-            hiddenThree: "",
             newClassesGalaxy: newClassesGalaxy,
             newClasses: newClasses,
             newClassesIphoneMax: newClassesIphoneMax,
@@ -132,8 +144,82 @@ export class InfoProvider extends React.Component {
             cowInMotion: false,
             divideAndConquer: "",
             code: [],
-            explanationDC: ""
+            explanationText: "This is the algorithm pattern that I learnt via Colt Steele's",
+            codeSW: SlidingWindowState[19],
+            indexDCexplanation: 0,
+            textSw: explanationSW[0],
+            indexSWexplanation: 0,
+            cowsArrayForm: "",
+            textCowArray: "",
+            codeSlidingWindow: "",
+            textSlidingWindow: "",
+            paraTextSlidingWindow: "",
+            buttonNextSlidingWindow: "",
+            buttonNextSlidingWindowFrozen: "",
+            buttonNextSlidingWindow2: "",
+            buttonNextSlidingWindowFrozen2: "",
+            language: "English"
         };
+    }
+
+    changeLanguage = async (language) => {
+        if (language === "English") {
+            this.setState({
+                firstCow: slidingStateSingle.firstCow,
+                secondCow: slidingStateSingle.secondCow,
+                thirdCow: slidingStateSingle.thirdCow,
+                singleWeightOne: slidingStateSingle.singleWeightOne,
+                singleWeightTwo: slidingStateSingle.singleWeightTwo,
+                singleWeightThree: slidingStateSingle.singleWeightThree,
+                totalWeight: slidingStateSingle.totalWeight,
+                stageTwoLineOne: slidingStateSingle.stageTwoLineOne,
+                stageTwoLineTwo: slidingStateSingle.stageTwoLineTwo,
+                cowStages: slidingStateSingle.cowStages,
+                stageOne: slidingStateSingle.stageOne,
+                stageTwo: slidingStateSingle.stageTwo,
+                stageThree: slidingStateSingle.stageThree,
+                textCowsBefore1: slidingStateSingle.textCowsBefore1,
+                textCowsBefore2: slidingStateSingle.textCowsBefore2,
+                textCowsAfter1: slidingStateSingle.textCowsAfter1,
+                textCowsAfter2: slidingStateSingle.textCowsBefore2,
+                cowToDisplayP1: slidingStateSingle.cowToDisplayP1,
+                cowToDisplayP2: slidingStateSingle.cowToDisplayP2,
+                cowToDisplayP3: slidingStateSingle.cowToDisplayP3,
+                cow: slidingStateSingle.cow,
+                buttonPause: slidingStateSingle.buttonPause,
+                textInMotion: slidingStateSingle.textInMotion,
+                cardNoWriting: slidingStateSingle.cardNoWriting,
+                maxWeight: slidingStateSingle.maxWeight
+            })
+        } else {
+            this.setState({
+                firstCow: slidingStateSingleSpanish.firstCow,
+                secondCow: slidingStateSingleSpanish.secondCow,
+                thirdCow: slidingStateSingleSpanish.thirdCow,
+                singleWeightOne: slidingStateSingleSpanish.singleWeightOne,
+                singleWeightTwo: slidingStateSingleSpanish.singleWeightTwo,
+                singleWeightThree: slidingStateSingleSpanish.singleWeightThree,
+                totalWeight: slidingStateSingleSpanish.totalWeight,
+                stageTwoLineOne: slidingStateSingleSpanish.stageTwoLineOne,
+                stageTwoLineTwo: slidingStateSingleSpanish.stageTwoLineTwo,
+                cowStages: slidingStateSingleSpanish.cowStages,
+                stageOne: slidingStateSingleSpanish.stageOne,
+                stageTwo: slidingStateSingleSpanish.stageTwo,
+                stageThree: slidingStateSingleSpanish.stageThree,
+                textCowsBefore1: slidingStateSingleSpanish.textCowsBefore1,
+                textCowsBefore2: slidingStateSingleSpanish.textCowsBefore2,
+                textCowsAfter1: slidingStateSingleSpanish.textCowsAfter1,
+                textCowsAfter2: slidingStateSingleSpanish.textCowsBefore2,
+                cowToDisplayP1: slidingStateSingleSpanish.cowToDisplayP1,
+                cowToDisplayP2: slidingStateSingleSpanish.cowToDisplayP2,
+                cowToDisplayP3: slidingStateSingleSpanish.cowToDisplayP3,
+                cow: slidingStateSingleSpanish.cow,
+                buttonPause: slidingStateSingleSpanish.buttonPause,
+                textInMotion: slidingStateSingleSpanish.textInMotion,
+                cardNoWriting: slidingStateSingleSpanish.cardNoWriting,
+                maxWeight: slidingStateSingleSpanish.maxWeight
+            })
+        }
     }
 
     componentDidMount = async () => {
@@ -146,6 +232,8 @@ export class InfoProvider extends React.Component {
     }
 
     updateWindowDimensions = () => {
+        var stageTwoLA;
+        this.state.language === "English" ? stageTwoLA = stageTwoLineArray : stageTwoLA = stageTwoLineArraySpanish
         var width = Math.min(window.innerWidth, window.screen.width)
         var height = Math.min(window.innerHeight, window.screen.height)
         var isWidthComputer = !!(width > 818)
@@ -190,10 +278,18 @@ export class InfoProvider extends React.Component {
             distanceTwo: newClasses.distanceTwo,
             distanceThree: newClasses.distanceThree,
             distanceOne: newClasses.distanceOne,
-            linksContact: newClasses.linksContact
+            linksContact: newClasses.linksContact,
+            cowsArrayForm: newClasses.cowsArrayForm,
+            textCowArray: newClasses.textCowArray,
+            codeSlidingWindow: newClasses.codeSlidingWindow,
+            textSlidingWindow: newClasses.textSlidingWindow,
+            paraTextSlidingWindow: newClasses.paraTextSlidingWindow,
+            buttonNextSlidingWindow: newClasses.buttonNextSlidingWindow,
+            buttonNextSlidingWindowFrozen: newClasses.buttonNextSlidingWindowFrozen,
+            buttonNextSlidingWindow2: newClasses.buttonNextSlidingWindow2,
+            buttonNextSlidingWindowFrozen2: newClasses.buttonNextSlidingWindowFrozen2,
         });
     };
-
 
 
     delay = (n) => {
@@ -325,7 +421,6 @@ export class InfoProvider extends React.Component {
             divideAndConquer: "two-hidden"
         })
         this.textBack()
-        this.explanationDCtext()
     }
 
     redirectSlidingWindow = async (stage) => {
@@ -342,6 +437,8 @@ export class InfoProvider extends React.Component {
         return "window"
     }
 
+
+
     cowsStop = async () => {
         for (const property in individualCows) {
             individualCows[property] = false
@@ -350,6 +447,8 @@ export class InfoProvider extends React.Component {
         var isWidthGalaxy = !!(window.innerWidth < 550)
         var isWidthIphone = !!((window.innerWidth <= 818) && (window.innerWidth >= 550))
         var newClasses;
+        var stateSingle;
+        this.state.language === "English" ? stateSingle = slidingStateSingle : stateSingle = slidingStateSingleSpanish
         if (isWidthComputer) {
             newClasses = this.state.newClasses
         } else if (isWidthGalaxy) {
@@ -358,24 +457,23 @@ export class InfoProvider extends React.Component {
             newClasses = this.state.newClassesIphoneMax
         }
         this.setState({
-            cowStages: slidingStateSingle.cowStages,
-            stageOne: slidingStateSingle.stageOne,
-            stageTwo: slidingStateSingle.stageTwo,
-            stageThree: slidingStateSingle.stageThree,
+            cowStages: stateSingle.cowStages,
+            stageOne: stateSingle.stageOne,
+            stageTwo: stateSingle.stageTwo,
+            stageThree: stateSingle.stageThree,
             panelText: newClasses.panelText,
             panelTextAnimated: newClasses.panelTextAnimated,
             pText: newClasses.pText,
             individualCows: individualCows
         })
         await this.delay(7);
-        console.log(newClasses)
         this.setState({
-            maxWeight: slidingStateSingle.maxWeight,
+            maxWeight: stateSingle.maxWeight,
             weightsOfThree: weightsOfThree,
             singleWeights: singleWeights,
-            cowToDisplayP1: slidingStateSingle.cowToDisplayP1,
-            cowToDisplayP2: slidingStateSingle.cowToDisplayP2,
-            cowToDisplayP3: slidingStateSingle.cowToDisplayP3,
+            cowToDisplayP1: stateSingle.cowToDisplayP1,
+            cowToDisplayP2: stateSingle.cowToDisplayP2,
+            cowToDisplayP3: stateSingle.cowToDisplayP3,
             cowInMotion: false,
             slidingButton: newClasses.slidingButton,
             minus: newClasses.minus,
@@ -384,24 +482,21 @@ export class InfoProvider extends React.Component {
             distanceTwo: newClasses.distanceTwo,
             distanceThree: newClasses.distanceThree,
             distanceOne: newClasses.distanceOne,
-            hiddenThree: newClasses.hiddenThree,
-            firstCow: slidingStateSingle.firstCow,
-            secondCow: slidingStateSingle.secondCow,
-            thirdCow: slidingStateSingle.thirdCow,
-            distanceTwo: newClasses.distanceOne,
-            distanceThree: newClasses.distanceThree,
-            distanceOne: newClasses.distanceOne,
-            stageTwoLineOne: slidingStateSingle.stageTwoLineOne,
-            stageTwoLineTwo: slidingStateSingle.stageTwoLineTwo,
-            singleWeightOne: slidingStateSingle.singleWeightOne,
-            singleWeightTwo: slidingStateSingle.singleWeightTwo,
-            singleWeightThree: slidingStateSingle.singleWeightThree,
-            totalWeight: slidingStateSingle.totalWeight
+            firstCow: stateSingle.firstCow,
+            secondCow: stateSingle.secondCow,
+            thirdCow: stateSingle.thirdCow,
+            stageTwoLineOne: stateSingle.stageTwoLineOne,
+            stageTwoLineTwo: stateSingle.stageTwoLineTwo,
+            singleWeightOne: stateSingle.singleWeightOne,
+            singleWeightTwo: stateSingle.singleWeightTwo,
+            singleWeightThree: stateSingle.singleWeightThree,
+            totalWeight: stateSingle.totalWeight,
         })
     }
 
     cowMovements = async (cowToDisplayP1, cowToDisplayP2, cowToDisplayP3, totalWeight, singleWeightOne, singleWeightTwo, singleWeightThree) => {
-        // debugger
+        var stateSingle;
+        this.state.language === "English" ? stateSingle = slidingStateSingle : stateSingle = slidingStateSingleSpanish
         if (this.state.cowInMotion) {
             await this.delay(6)
         }
@@ -412,13 +507,11 @@ export class InfoProvider extends React.Component {
                 thirdCow: this.state.thirdCowArray["1"]
             })
         }
-        // debugger
 
         if (this.state.cowInMotion) {
 
             await this.delay(6)
         }
-        // debugger
         if (this.state.cowInMotion) {
 
             this.setState({
@@ -433,7 +526,6 @@ export class InfoProvider extends React.Component {
                 singleWeightThree: this.state.singleWeights[singleWeightThree]
             })
         }
-        // // debugger
         if (this.state.cowInMotion) {
             await this.delay(6)
         }
@@ -451,19 +543,19 @@ export class InfoProvider extends React.Component {
             if (this.state.totalWeight === "3425kg") {
                 this.setState({
                     totalWeight: this.state.maxWeight,
-                    stageTwoLineOne: stageTwoLineArray["6"],
-                    stageTwoLineTwo: stageTwoLineArray["1"],
+                    stageTwoLineOne: stateSingle["6"],
+                    stageTwoLineTwo: stateSingle["1"],
                 })
             } else if (this.state.maxWeight < this.state.totalWeight) {
                 this.setState({
                     maxWeight: this.state.totalWeight,
-                    stageTwoLineOne: stageTwoLineArray["2"],
-                    stageTwoLineTwo: stageTwoLineArray["3"]
+                    stageTwoLineOne: stateSingle["2"],
+                    stageTwoLineTwo: stateSingle["3"]
                 })
             } else if (this.state.maxWeight > this.state.totalWeight) {
                 this.setState({
-                    stageTwoLineOne: stageTwoLineArray["4"],
-                    stageTwoLineTwo: stageTwoLineArray["5"]
+                    stageTwoLineOne: stateSingle["4"],
+                    stageTwoLineTwo: stateSingle["5"]
                 })
             }
         }
@@ -477,7 +569,6 @@ export class InfoProvider extends React.Component {
                 secondCow: this.state.secondCowArray["0"],
                 thirdCow: this.state.thirdCowArray["2"],
             })
-            console.log('a done')
         }
         let a = 2
         let b = 3
@@ -491,7 +582,6 @@ export class InfoProvider extends React.Component {
                 b = c
                 c = copy
                 await this.delay(0.03)
-                console.log('b done')
             } else {
                 break
             }
@@ -513,11 +603,9 @@ export class InfoProvider extends React.Component {
     }
 
     stageThree = async () => {
-        console.log("stage three")
     }
 
     report = (heightOutput, widthOutput) => {
-        console.log(heightOutput, widthOutput)
     }
 
     cowAppear = async () => {
@@ -538,41 +626,42 @@ export class InfoProvider extends React.Component {
     }
 
     cancelAnimations = async (path) => {
-        console.log(path)
         if (path.includes("slidingwindow")) {
             this.cowsStop()
         } else if (path.includes("divide")) {
             this.textBack()
-            console.log('yo')
         }
     }
 
-    explanationDCtext = async () => {
-        // console.log(explanationTextDC)
-        // console.log(explanationTextNaive)
-        // console.log(explanationTextRefactor)
-        // var explanationTextNaive = DivideAndConquerState[11]
-        // var explanationTextRefactor = DivideAndConquerState[12]
-        for (var x = 0; x < 4; x++) {
-            await this.delay(4)
-            this.setState({
-                explanationText: explanationText[x.toString()]
-            })
-        }
+    explanationDCtext = async (index) => {
+        var i = index + (this.state.indexDCexplanation || 0)
         this.setState({
-            code: explanationTextNaive
+            indexDCexplanation: i,
+            explanationText: explanationTextDescription[i.toString()]
         })
-        for (x; x < 11; x++) {
-            await this.delay(4)
+        if (i === 2) {
             this.setState({
-                explanationText: explanationText[x.toString()]
+                code: explanationTextNaive
             })
-            if (x === 10) {
-                this.setState({
-                    code: explanationTextRefactor
-                })
-            }
         }
+        if (i === 8) {
+            this.setState({
+                code: explanationTextRefactor
+            })
+        }
+    }
+
+    explanationSWText = async (index) => {
+        var explanation
+        this.state.language === "English" ? explanation = explanationSW : explanation = explanationSWSpanish
+        var i = this.state.indexSWexplanation + index
+        var code
+        i === 0 ? code = codeNaiveSW : code = codeRefactorSW
+        this.setState({
+            codeSW: code,
+            textSw: explanation[i],
+            indexSWexplanation: i
+        })
     }
 
     render() {
@@ -588,7 +677,9 @@ export class InfoProvider extends React.Component {
                     changeTextInMotion: this.changeTextInMotion,
                     redirectSlidingWindow: this.redirectSlidingWindow,
                     cowsStop: this.cowsStop,
-                    explanationDCtext: this.explanationDCtext
+                    explanationDCtext: this.explanationDCtext,
+                    explanationSWText: this.explanationSWText,
+                    changeLanguage: this.changeLanguage
                 }}>
                 {!this.state.loading ? this.props.children : "Loading List..."}
             </InfoContext.Provider>
