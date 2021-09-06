@@ -133,13 +133,13 @@ export class InfoProvider extends React.Component {
             code: explanationTextNaive["0"],
             explanationDC: "",
             SWExplanation: textExplanation[0],
-            codeSWNaive: codeNaive,
-            codeSWRefactor: codeRefactor,
+            codeSW: codeNaive,
             SWExplanationSpace: "",
             SWExplanationButtonSpace: "",
             SWCodeSpace: "",
             SWExplanationBottomPanel: "",
-            explanationText: explanationText["0"]
+            explanationText: explanationText["0"],
+            stageTwoLine: "stageTwoLine"
         };
     }
 
@@ -205,7 +205,20 @@ export class InfoProvider extends React.Component {
         });
     };
 
+    SWNext = (val) => {
 
+        if (val === 1) {
+            this.setState({
+                codeSW: codeRefactor,
+                SWExplanation: textExplanation[1]
+            })
+        } else if (val === -1) {
+            this.setState({
+                codeSW: codeNaive,
+                SWExplanation: textExplanation[0]
+            })
+        }
+    }
 
     delay = (n) => {
         return new Promise(function (resolve) {
@@ -406,108 +419,97 @@ export class InfoProvider extends React.Component {
     }
 
     cowMovements = async (cowToDisplayP1, cowToDisplayP2, cowToDisplayP3, totalWeight, singleWeightOne, singleWeightTwo, singleWeightThree) => {
-        if (this.state.cowInMotion) {
-            await this.delay(6)
-        }
-        if (this.state.cowInMotion) {
+        // debugger
+        await this.delay(6)
+        // debugger
+        this.setState({
+            firstCow: this.state.firstCowArray["1"],
+            secondCow: this.state.secondCowArray["1"],
+            thirdCow: this.state.thirdCowArray["1"]
+        })
+        // debugger
+        await this.delay(6)
+        // debugger
+        this.setState({
+            firstCow: this.state.firstCowArray["0"],
+            secondCow: this.state.secondCowArray["0"],
+            thirdCow: this.state.thirdCowArray["2"],
+            cowToDisplayP1: cowToDisplayP1,
+            cowToDisplayP2: cowToDisplayP2,
+            cowToDisplayP3: cowToDisplayP3,
+            singleWeightOne: this.state.singleWeights[singleWeightOne],
+            singleWeightTwo: this.state.singleWeights[singleWeightTwo],
+            singleWeightThree: this.state.singleWeights[singleWeightThree],
+        })
+        if (totalWeight !== "18") {
             this.setState({
-                firstCow: this.state.firstCowArray["1"],
-                secondCow: this.state.secondCowArray["1"],
-                thirdCow: this.state.thirdCowArray["1"]
+                stageTwoLine: "stageTwoLine-change"
             })
         }
-
-        if (this.state.cowInMotion) {
-
-            await this.delay(6)
-        }
-        if (this.state.cowInMotion) {
-
+        // debugger
+        await this.delay(6)
+        // debugger
+        this.setState({
+            thirdCow: this.state.thirdCowArray["0"],
+            totalWeight: this.state.weightsOfThree[totalWeight]
+        })
+        // debugger
+        console.log('hi')
+        if (this.state.totalWeight === "3425kg") {
             this.setState({
-                firstCow: this.state.firstCowArray["0"],
-                secondCow: this.state.secondCowArray["0"],
-                thirdCow: this.state.thirdCowArray["2"],
-                cowToDisplayP1: cowToDisplayP1,
-                cowToDisplayP2: cowToDisplayP2,
-                cowToDisplayP3: cowToDisplayP3,
-                singleWeightOne: this.state.singleWeights[singleWeightOne],
-                singleWeightTwo: this.state.singleWeights[singleWeightTwo],
-                singleWeightThree: this.state.singleWeights[singleWeightThree]
+                totalWeight: this.state.maxWeight,
+                stageTwoLineOne: stageTwoLineArray["6"],
+                stageTwoLineTwo: stageTwoLineArray["1"],
+            })
+        } else if (this.state.maxWeight < this.state.totalWeight) {
+            this.setState({
+                maxWeight: this.state.totalWeight,
+                stageTwoLineOne: stageTwoLineArray["2"],
+                stageTwoLineTwo: stageTwoLineArray["3"]
+            })
+        } else if (this.state.maxWeight > this.state.totalWeight) {
+            this.setState({
+                stageTwoLineOne: stageTwoLineArray["4"],
+                stageTwoLineTwo: stageTwoLineArray["5"]
             })
         }
-        if (this.state.cowInMotion) {
-            await this.delay(6)
-        }
-        if (this.state.cowInMotion) {
-
-            this.setState({
-                thirdCow: this.state.thirdCowArray["0"],
-            })
-            this.setState({
-                totalWeight: this.state.weightsOfThree[totalWeight]
-            })
-        }
-        if (this.state.cowInMotion) {
-
-            if (this.state.totalWeight === "3425kg") {
-                this.setState({
-                    totalWeight: this.state.maxWeight,
-                    stageTwoLineOne: stageTwoLineArray["6"],
-                    stageTwoLineTwo: stageTwoLineArray["1"],
-                })
-            } else if (this.state.maxWeight < this.state.totalWeight) {
-                this.setState({
-                    maxWeight: this.state.totalWeight,
-                    stageTwoLineOne: stageTwoLineArray["2"],
-                    stageTwoLineTwo: stageTwoLineArray["3"]
-                })
-            } else if (this.state.maxWeight > this.state.totalWeight) {
-                this.setState({
-                    stageTwoLineOne: stageTwoLineArray["4"],
-                    stageTwoLineTwo: stageTwoLineArray["5"]
-                })
-            }
-        }
+        // debugger
+        this.setState({
+            stageTwoLine: "stageTwoLine"
+        })
+        // debugger
     }
 
     stageTwo = async () => {
         await this.sizeCows()
-        if (this.state.cowInMotion) {
-            this.setState({
-                firstCow: this.state.firstCowArray["0"],
-                secondCow: this.state.secondCowArray["0"],
-                thirdCow: this.state.thirdCowArray["2"],
-            })
-        }
+        this.setState({
+            firstCow: this.state.firstCowArray["0"],
+            secondCow: this.state.secondCowArray["0"],
+            thirdCow: this.state.thirdCowArray["2"],
+        })
         let a = 2
         let b = 3
         let c = 1
         let copy
         for (var x = 1; x < 18; x++) {
-            if (this.state.cowInMotion) {
-                await this.cowMovements(a.toString(), b.toString(), c.toString(), x.toString(), x.toString(), (x + 1).toString(), (x + 2).toString())
-                copy = a
-                a = b
-                b = c
-                c = copy
-                await this.delay(0.03)
-            } else {
-                break
-            }
+            await this.cowMovements(a.toString(), b.toString(), c.toString(), x.toString(), x.toString(), (x + 1).toString(), (x + 2).toString())
+            copy = a
+            a = b
+            b = c
+            c = copy
         }
-        if (this.state.cowInMotion) {
-            this.setState({
-                firstCow: this.state.firstCowArray["0"],
-                secondCow: this.state.secondCowArray["0"],
-                thirdCow: this.state.thirdCowArray["0"],
-                cowInMotion: false
-            })
-        }
-        await this.delay()
+        this.setState({
+            firstCow: this.state.firstCowArray["0"],
+            secondCow: this.state.secondCowArray["0"],
+            thirdCow: this.state.thirdCowArray["0"],
+            cowInMotion: false,
+        })
+        await this.delay(6)
         this.setState({
             stageTwoLineOne: "",
             stageTwoLineTwo: "",
             totalWeight: ""
+
         })
     }
 
@@ -566,7 +568,8 @@ export class InfoProvider extends React.Component {
                     redirectSlidingWindow: this.redirectSlidingWindow,
                     cowsStop: this.cowsStop,
                     explanationDCtext: this.explanationDCtext,
-                    stageThree: this.stageThree
+                    stageThree: this.stageThree,
+                    SWNext: this.SWNext
                 }}>
                 {!this.state.loading ? this.props.children : "Loading List..."}
             </InfoContext.Provider>

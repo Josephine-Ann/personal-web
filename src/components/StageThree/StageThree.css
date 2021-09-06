@@ -124,3 +124,19 @@
 #sw-explanation-button-space-galaxy {
     order: -1;
 }
+
+#sw-explanation-space p {
+    height: 150px;
+}
+
+#button-fade-out {
+    background-color: rgb(158, 119, 197) !important;
+}
+
+#sw-explanation-space-iphonemax p {
+    height: 150px
+}
+
+#sw-explanation-space-galaxy g {
+    height: 150px
+}

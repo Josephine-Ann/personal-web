@@ -121,6 +121,9 @@
 #sliding-button {
     height: 40px;
     width: 140px;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
 }
 
 #sliding-button-galaxy {
@@ -131,6 +134,9 @@
 #sliding-button-iphonemax {
     height: 26.400000000000002px;
     width: 92.4px;
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
 }
 
 #background {

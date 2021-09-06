@@ -9,15 +9,17 @@ import Highlight from "react-highlight";
 
 export const StageThree = () => {
     const {
+        SWNext,
         state: {
+            codeSW,
             cowStages,
             singleWeights,
             SWExplanation,
             SWExplanationSpace,
             SWExplanationButtonSpace,
             codeSWNaive,
-            SWCodeSpace,
-            SWExplanationBottomPanel
+            SWExplanationBottomPanel,
+            SWCodeSpace
         },
     } = useContext(InfoContext);
 
@@ -107,58 +109,58 @@ export const StageThree = () => {
                 <div id={SWExplanationSpace}>
                     <p>{SWExplanation}</p>
                     <div id={SWExplanationButtonSpace}>
-                        <button>Previous</button>
-                        <button>Next</button>
+                        <button id={(SWExplanation.includes("Colt")) && "button-fade-out"} onClick={() => SWNext(-1)}>Previous</button>
+                        <button id={!(SWExplanation.includes("Colt")) && "button-fade-out"} onClick={() => SWNext(+1)}>Next</button>
                     </div>
                 </div>
                 <div id={SWCodeSpace}>
                     <Highlight language="javascript">
-                        {codeSWNaive[0]}
+                        {codeSW[0]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[1]}
+                        {codeSW[1]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[2]}
+                        {codeSW[2]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[3]}
+                        {codeSW[3]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[4]}
+                        {codeSW[4]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[5]}
+                        {codeSW[5]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[6]}
+                        {codeSW[6]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[7]}
+                        {codeSW[7]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[8]}
+                        {codeSW[8]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[9]}
+                        {codeSW[9]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[10]}
+                        {codeSW[10]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[11]}
+                        {codeSW[11]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[12]}
+                        {codeSW[12]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[13]}
+                        {codeSW[13]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[14]}
+                        {codeSW[14]}
                     </Highlight>
                     <Highlight language="javascript">
-                        {codeSWNaive[15]}
+                        {codeSW[15]}
                     </Highlight>
                 </div>
             </div>
