@@ -286,6 +286,7 @@ export class InfoProvider extends React.Component {
 
     changeText = async () => {
         await this.changeTextInMotion()
+
         if (this.state.textInMotion) {
             this.setState({
                 cardNoWriting: this.state.cardNoWritingArray[0],
@@ -419,69 +420,80 @@ export class InfoProvider extends React.Component {
     }
 
     cowMovements = async (cowToDisplayP1, cowToDisplayP2, cowToDisplayP3, totalWeight, singleWeightOne, singleWeightTwo, singleWeightThree) => {
-        // debugger
-        await this.delay(6)
-        // debugger
-        this.setState({
-            firstCow: this.state.firstCowArray["1"],
-            secondCow: this.state.secondCowArray["1"],
-            thirdCow: this.state.thirdCowArray["1"]
-        })
-        // debugger
-        await this.delay(6)
-        // debugger
-        this.setState({
-            firstCow: this.state.firstCowArray["0"],
-            secondCow: this.state.secondCowArray["0"],
-            thirdCow: this.state.thirdCowArray["2"],
-            cowToDisplayP1: cowToDisplayP1,
-            cowToDisplayP2: cowToDisplayP2,
-            cowToDisplayP3: cowToDisplayP3,
-            singleWeightOne: this.state.singleWeights[singleWeightOne],
-            singleWeightTwo: this.state.singleWeights[singleWeightTwo],
-            singleWeightThree: this.state.singleWeights[singleWeightThree],
-        })
-        if (totalWeight !== "18") {
+        if (this.state.cowInMotion) {
+            await this.delay(6)
+        }
+        if (this.state.cowInMotion) {
             this.setState({
-                stageTwoLine: "stageTwoLine-change"
+                firstCow: this.state.firstCowArray["1"],
+                secondCow: this.state.secondCowArray["1"],
+                thirdCow: this.state.thirdCowArray["1"]
             })
         }
-        // debugger
-        await this.delay(6)
-        // debugger
-        this.setState({
-            thirdCow: this.state.thirdCowArray["0"],
-            totalWeight: this.state.weightsOfThree[totalWeight]
-        })
-        // debugger
-        console.log('hi')
-        if (this.state.totalWeight === "3425kg") {
+        if (this.state.cowInMotion) {
+            await this.delay(6)
+
+        }
+        if (this.state.cowInMotion) {
             this.setState({
-                totalWeight: this.state.maxWeight,
-                stageTwoLineOne: stageTwoLineArray["6"],
-                stageTwoLineTwo: stageTwoLineArray["1"],
-            })
-        } else if (this.state.maxWeight < this.state.totalWeight) {
-            this.setState({
-                maxWeight: this.state.totalWeight,
-                stageTwoLineOne: stageTwoLineArray["2"],
-                stageTwoLineTwo: stageTwoLineArray["3"]
-            })
-        } else if (this.state.maxWeight > this.state.totalWeight) {
-            this.setState({
-                stageTwoLineOne: stageTwoLineArray["4"],
-                stageTwoLineTwo: stageTwoLineArray["5"]
+                firstCow: this.state.firstCowArray["0"],
+                secondCow: this.state.secondCowArray["0"],
+                thirdCow: this.state.thirdCowArray["2"],
+                cowToDisplayP1: cowToDisplayP1,
+                cowToDisplayP2: cowToDisplayP2,
+                cowToDisplayP3: cowToDisplayP3,
+                singleWeightOne: this.state.singleWeights[singleWeightOne],
+                singleWeightTwo: this.state.singleWeights[singleWeightTwo],
+                singleWeightThree: this.state.singleWeights[singleWeightThree],
             })
         }
-        // debugger
-        this.setState({
-            stageTwoLine: "stageTwoLine"
-        })
-        // debugger
+        if (this.state.cowInMotion) {
+            if (totalWeight !== "18") {
+                this.setState({
+                    stageTwoLine: "stageTwoLine-change"
+                })
+            }
+        }
+        if (this.state.cowInMotion) {
+            await this.delay(6)
+
+        }
+        if (this.state.cowInMotion) {
+            this.setState({
+                thirdCow: this.state.thirdCowArray["0"],
+                totalWeight: this.state.weightsOfThree[totalWeight]
+            })
+        }
+        if (this.state.cowInMotion) {
+            if (this.state.totalWeight === "3425kg") {
+                this.setState({
+                    totalWeight: this.state.maxWeight,
+                    stageTwoLineOne: stageTwoLineArray["6"],
+                    stageTwoLineTwo: stageTwoLineArray["1"],
+                })
+            } else if (this.state.maxWeight < this.state.totalWeight) {
+                this.setState({
+                    maxWeight: this.state.totalWeight,
+                    stageTwoLineOne: stageTwoLineArray["2"],
+                    stageTwoLineTwo: stageTwoLineArray["3"]
+                })
+            } else if (this.state.maxWeight > this.state.totalWeight) {
+                this.setState({
+                    stageTwoLineOne: stageTwoLineArray["4"],
+                    stageTwoLineTwo: stageTwoLineArray["5"]
+                })
+            }
+        }
+        if (this.state.cowInMotion) {
+            this.setState({
+                stageTwoLine: "stageTwoLine"
+            })
+        }
     }
 
     stageTwo = async () => {
         await this.sizeCows()
+        var cowInMotion = this.state.cowInMotion
         this.setState({
             firstCow: this.state.firstCowArray["0"],
             secondCow: this.state.secondCowArray["0"],
@@ -491,7 +503,7 @@ export class InfoProvider extends React.Component {
         let b = 3
         let c = 1
         let copy
-        for (var x = 1; x < 18; x++) {
+        for (var x = 1; x < 18 && cowInMotion; x++) {
             await this.cowMovements(a.toString(), b.toString(), c.toString(), x.toString(), x.toString(), (x + 1).toString(), (x + 2).toString())
             copy = a
             a = b
@@ -547,6 +559,9 @@ export class InfoProvider extends React.Component {
 
     cancelAnimations = async (path) => {
         if (path.includes("slidingwindow")) {
+            this.setState({
+                cowInMotion: false
+            })
             this.cowsStop()
         } else if (path.includes("divide")) {
             this.textBack()
