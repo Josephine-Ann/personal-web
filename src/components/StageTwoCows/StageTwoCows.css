@@ -4,6 +4,432 @@
     margin-top: 20vh;
     width: 100%;
 }
+@media (min-width: 1280px) {
+  #next-button {
+    position: absolute;
+    top: 80vh;
+    left: 40vw;
+    border: 0;
+    background-color: #794499;
+    width: 20vw;
+    height: 5vh;
+    color: white;
+  }
+}
+
+@media (max-width: 599px) {
+  #next-button {
+    position: absolute;
+    top: 80vh;
+    left: 25vw;
+    border: 0;
+    background-color: #794499;
+    width: 50vw;
+    height: 5vh;
+    color: white;
+    font-size: 1.5vh;
+  }
+}
+
+@media (min-width: 600px) {
+  #next-button {
+    position: absolute;
+    top: 80vh;
+    left: 35vw;
+    border: 0;
+    background-color: #794499;
+    width: 30vw;
+    height: 5vh;
+    color: white;
+    font-size: 1.8vh;
+  }
+}
+
+
+.cow-position-test {
+  height: 200px;
+  top: 40vh
+}
+
+#cow-1 {
+  position: absolute;
+  left: 6.944444444444445vw;
+  animation: 
+  dance 5s linear 0s normal 1 forwards,
+  leave 6s linear 5s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 11s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 16s normal 1 forwards, 
+  dance 5s linear 21s normal 1 forwards,
+  third-cow-go-left 6s linear 27s normal 1 forwards, 
+  dance 5s linear 33s normal 1 forwards,
+  second-cow-go-left 6s linear 38s normal 1 forwards, 
+  dance 5s linear 43s normal 1 forwards,
+  leave 6s linear 49s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 55s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 60s normal 1 forwards, 
+  dance 5s linear 66s normal 1 forwards,
+  third-cow-go-left 6s linear 71s normal 1 forwards, 
+  dance 5s linear 77s normal 1 forwards,
+  second-cow-go-left 6s linear 82s normal 1 forwards, 
+  dance 5s linear 88s normal 1 forwards,
+  leave 6s linear 93s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 99s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 104s normal 1 forwards,
+  dance 5s linear 110s normal 1 forwards, 
+  third-cow-go-left 6s linear 115s normal 1 forwards, 
+  dance 5s linear 121s normal 1 forwards,
+  second-cow-go-left 6s linear 126s normal 1 forwards, 
+  dance 5s linear 132s normal 1 forwards,
+  leave 6s linear 137s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 143s normal 1 forwards,
+  fourth-cow-go-left 6s linear 148s normal 1 forwards,
+  dance 5s linear 154s normal 1 forwards,
+  third-cow-go-left 6s linear 159s normal 1 forwards, 
+  dance 5s linear 165s normal 1 forwards,
+  second-cow-go-left 6s linear 170s normal 1 forwards,
+  dance 10s linear 176s normal infinite none;
+}
+
+#cow-2 {
+  position: absolute;
+  left: 34.72222222222222%;
+  animation: 
+  dance 5s linear 0s normal 1 forwards,
+  second-cow-go-left 6s linear 5s normal 1 forwards,
+  dance 5s linear 11s normal 1 forwards,
+  leave 6s linear 16s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 22s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 27s normal 1 forwards, 
+  dance 5s linear 33s normal 1 forwards,
+  third-cow-go-left 6s linear 38s normal 1 forwards, 
+  dance 5s linear 44s normal 1 forwards,
+  second-cow-go-left 6s linear 49s normal 1 forwards, 
+  dance 5s linear 55s normal 1 forwards,
+  leave 6s linear 60s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 66s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 71s normal 1 forwards,
+  dance 5s linear 76s normal 1 forwards, 
+  third-cow-go-left 6s linear 82s normal 1 forwards,
+  dance 5s linear 88s normal 1 forwards, 
+  second-cow-go-left 6s linear 93s normal 1 forwards, 
+  dance 5s linear 99s normal 1 forwards,
+  leave 6s linear 104s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 110s normal 1 forwards,
+  fourth-cow-go-left 6s linear 115s normal 1 forwards,
+  dance 5s linear 121s normal 1 forwards,
+  third-cow-go-left 6s linear 126s normal 1 forwards, 
+  dance 5s linear 132s normal 1 forwards,
+  second-cow-go-left 6s linear 137s normal 1 forwards, 
+  dance 5s linear 143s normal 1 forwards,
+  leave 6s linear 148s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 154s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 159s normal 1 forwards,
+  dance 5s linear 165s normal 1 forwards,
+  third-cow-go-left 6s linear 170s normal 1 forwards,
+  dance 10s linear 176s normal infinite none;
+}
+
+#cow-3 {
+  position: absolute;
+  left: 62.5%;
+  animation: 
+  dance 5s linear 0s normal 1 forwards,
+  third-cow-go-left 6s linear 5s normal 1 forwards, 
+  dance 5s linear 11s normal 1 forwards,
+  second-cow-go-left 6s linear 16s normal 1 forwards, 
+  dance 5s linear 22s normal 1 forwards,
+  leave 6s linear 27s normal 1 forwards, 
+  flip-left-edge-to-right 3s linear 33s normal 1 forwards,
+  fourth-cow-go-left 6s linear 38s normal 1 forwards,
+  dance 5s linear 44s normal 1 forwards,
+  third-cow-go-left 6s linear 49s normal 1 forwards, 
+  dance 5s linear 55s normal 1 forwards,
+  second-cow-go-left 6s linear 60s normal 1 forwards,
+  dance 5s linear 66s normal 1 forwards, 
+  leave 6s linear 71s normal 1 forwards, 
+  flip-left-edge-to-right 3s linear 77s normal 1 forwards,
+  fourth-cow-go-left 6s linear 82s normal 1 forwards,
+  dance 5s linear 88s normal 1 forwards,
+  third-cow-go-left 6s linear 93s normal 1 forwards,
+  dance 5s linear 99s normal 1 forwards, 
+  second-cow-go-left 6s linear 104s normal 1 forwards, 
+  dance 5s linear 110s normal 1 forwards,
+  leave 6s linear 115s normal 1 forwards, 
+  flip-left-edge-to-right 3s linear 121s normal 1 forwards,
+  fourth-cow-go-left 6s linear 126s normal 1 forwards,
+  dance 5s linear 132s normal 1 forwards,
+  third-cow-go-left 6s linear 137s normal 1 forwards, 
+  dance 5s linear 143s normal 1 forwards,
+  second-cow-go-left 6s linear 148s normal 1 forwards, 
+  dance 5s linear 154s normal 1 forwards,
+  leave 6s linear 159s normal 1 forwards,
+  flip-left-edge-to-right 5s linear 165s normal 1 forwards,
+  fourth-cow-go-left 6s linear 171s normal 1 forwards,
+  dance 10s linear 176s normal infinite none;
+}
+
+#cow-4 {
+  position: absolute;
+  left: 104.16666666666667%;
+  animation: 
+  dance 5s linear 0s normal 1 forwards,
+  fourth-cow-go-left 6s linear 5s normal 1 forwards, 
+  dance 5s linear 11s normal 1 forwards,
+  third-cow-go-left 6s linear 16s normal 1 forwards,
+  dance 5s linear 22s normal 1 forwards, 
+  second-cow-go-left 6s linear 27s normal 1 forwards, 
+  dance 5s linear 33s normal 1 forwards,
+  leave 6s linear 38s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 44s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 49s normal 1 forwards, 
+  dance 5s linear 55s normal 1 forwards,
+  third-cow-go-left 6s linear 60s normal 1 forwards, 
+  dance 5s linear 66s normal 1 forwards,
+  second-cow-go-left 6s linear 71s normal 1 forwards, 
+  dance 5s linear 77s normal 1 forwards,
+  leave 6s linear 82s normal 1 forwards,  
+  flip-left-edge-to-right 5s linear 88s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 93s normal 1 forwards, 
+  dance 5s linear 99s normal 1 forwards,
+  third-cow-go-left 6s linear 104s normal 1 forwards,
+  dance 5s linear 110s normal 1 forwards, 
+  second-cow-go-left 6s linear 115s normal 1 forwards, 
+  dance 5s linear 121s normal 1 forwards,
+  leave 6s linear 126s normal 1 forwards, 
+  flip-left-edge-to-right 5s linear 132s normal 1 forwards, 
+  fourth-cow-go-left 6s linear 137s normal 1 forwards,
+  dance 5s linear 143s normal 1 forwards, 
+  third-cow-go-left 6s linear 148s normal 1 forwards, 
+  dance 5s linear 154s normal 1 forwards,
+  second-cow-go-left 6s linear 159s normal 1 forwards, 
+  dance 5s linear 166s normal 1 forwards,
+  leave 6s linear 170s normal 1 forwards;
+}
+
+
+@keyframes dance {
+  0%  {transform: rotate(0deg);}
+  2.5%  {transform: rotate(1deg);}
+  5%  {transform: rotate(2deg);}
+  7.5%  {transform: rotate(3deg);}
+  10%  {transform: rotate(6deg);}
+  12.5%  {transform: rotate(9deg);}
+  15%  {transform: rotate(12deg);}
+  17.5%  {transform: rotate(9deg);}
+  20%  {transform: rotate(6deg);}
+  22.5%  {transform: rotate(3deg);}
+  25%  {transform: rotate(0deg);}
+  27.5%  {transform: rotate(0deg);}
+  30%  {transform: rotate(1deg);}
+  32.5%  {transform: rotate(2deg);}
+  35%  {transform: rotate(3deg);}
+  37.5%  {transform: rotate(6deg);}
+  40%  {transform: rotate(9deg);}
+  42.5%  {transform: rotate(12deg);}
+  45%  {transform: rotate(9deg);}
+  47.5%  {transform: rotate(6deg);}
+  50%  {transform: rotate(3deg);}
+  52.5%  {transform: rotate(0deg);}
+  55%  {transform: rotate(0deg);}
+  57.5%  {transform: rotate(1deg);}
+  60%  {transform: rotate(2deg);}
+  62.5%  {transform: rotate(3deg);}
+  65%  {transform: rotate(6deg);}
+  67.5%  {transform: rotate(9deg);}
+  70%  {transform: rotate(12deg);}
+  72.5%  {transform: rotate(9deg);}
+  75%  {transform: rotate(6deg);}
+  77.5%  {transform: rotate(3deg);}
+  80%  {transform: rotate(0deg);}
+  82.5%  {transform: rotate(0deg);}
+  85%  {transform: rotate(1deg);}
+  87.5%  {transform: rotate(2deg);}
+  90%  {transform: rotate(3deg);}
+  92.5%  {transform: rotate(6deg);}
+  95%  {transform: rotate(9deg);}
+  97.5%  {transform: rotate(12deg);}
+  100%  {transform: rotate(9deg);}
+}
+
+@keyframes leave {
+  0%  {transform: rotate(0deg); left: 6.944444444444445vw; top: 40vh ;}
+  2.5%  {transform: rotate(1deg); left: 6.25vw; top: 40vh ;}
+  5%  {transform: rotate(2deg); left: 5.555555555555555vw; top: 40vh ;}
+  7.5%  {transform: rotate(3deg); left: 4.861111111111112vw; top: 40vh ;}
+  10%  {transform: rotate(6deg); left: 4.166666666666666vw; top: 40vh ;}
+  12.5%  {transform: rotate(9deg); left: 3.4722222222222223vw; top: 40vh ;}
+  15%  {transform: rotate(12deg); left:  2.7777777777777777vw; top: 40vh  ;}
+  17.5%  {transform: rotate(9deg); left: 2.083333333333333vw; top: 40vh  ; }
+  20%  {transform: rotate(6deg); left: 1.3888888888888888vw; top: 40vh  ; }
+  22.5%  {transform: rotate(3deg); left: 0.6944444444444444vw; top: 40vh  ; }
+  25%  {transform: rotate(2deg); left:  0vw; top: 40vh ;}
+  27.5%  {transform:  rotate(0deg); left:  -0.6944444444444444vw; top: 40vh ;}
+  30%  {transform: rotate(1deg); left: -1.3888888888888888vw; top: 40vh  ;}
+  32.5%  {transform: rotate(2deg); left: -2.083333333333333vw; top: 40vh  ;}
+  35%  {transform: rotate(3deg); left: -2.7777777777777777vw; top: 40vh }
+  37.5%  {transform: rotate(6deg); left:  -4.166666666666666vw; top: 40vh  ;}
+  40%  {transform: rotate(9deg); left: -5.555555555555555vw; top: 40vh  ; }
+  42.5%  {transform: rotate(12deg); left: -6.944444444444445vw; top: 40vh  ; }
+  45%  {transform: rotate(9deg); left: -8.333333333333332vw; top: 40vh  ; }
+  47.5%  {transform:  rotate(6deg); left: -9.722222222222223vw; top: 40vh ; }
+  50%  {transform:  rotate(3deg); left: -11.11111111111111vw; top: 40vh ; }
+  52.5%  {transform:  rotate(0deg); left:  -12.5vw; top: 40vh ;}
+  55%  {transform: rotate(0deg); left:  -13.88888888888889vw; top: 40vh  ;}
+  57.5%  {transform: rotate(1deg); left: -15.277777777777779vw; top: 40vh  ; }
+  60%  {transform:  rotate(2deg); left: -16.666666666666664vw; top: 40vh ; }
+  62.5%  {transform: rotate(3deg); left: -18.055555555555554vw; top: 40vh  ; }
+  65%  {transform: rotate(6deg); left: -19.444444444444446vw; top: 40vh  ; }
+  67.5%  {transform: rotate(9deg); left: -20.833333333333336vw; top: 40vh   ; }
+  70%  {transform: rotate(12deg); left: -22.22222222222222vw; top: 40vh   }
+  72.5%  {transform: rotate(9deg); left: -23.61111111111111vw; top: 40vh ; }
+  75%  {transform: rotate(6deg); left: -25vw; top: 40vh  ; }
+  77.5%  {transform: rotate(3deg); left: -26.38888888888889vw; top: 40vh  ; }
+  80%  {transform: rotate(0deg); left: -27.77777777777778vw; top: 40vh ;}
+  100%  {transform: rotate(9deg); left: -27.77777777777778vw; top: 40vh; display: none;}
+}
+
+@keyframes second-cow-go-left {
+  0%  {transform: rotate(0deg); left: 34.72222222222222%;}
+  2.5%  {transform: rotate(1deg); left: 34.375%;}
+  5%  {transform: rotate(2deg); left: 34.02777777777778%}
+  7.5%  {transform: rotate(3deg); left: 33.68055555555556%}
+  10%  {transform: rotate(6deg); left: 33.33333333333333%}
+  12.5%  {transform: rotate(9deg); left: 32.98611111111111%}
+  15%  {transform: rotate(12deg); left: 32.63888888888889%}
+  17.5%  {transform: rotate(9deg); left: 32.29166666666667%}
+  20%  {transform: rotate(6deg); left: 31.944444444444443%}
+  22.5%  {transform: rotate(3deg); left: 31.59722222222222%}
+  25%  {transform: rotate(0deg); left: 31.25%}
+  27.5%  {transform: rotate(0deg); left: 30.90277777777778%;}
+  30%  {transform: rotate(1deg); left: 30.555555555555557%;}
+  32.5%  {transform: rotate(2deg); left: 30.208333333333332%}
+  35%  {transform: rotate(3deg); left: 29.86111111111111%}
+  37.5%  {transform: rotate(6deg); left: 29.51388888888889%}
+  40%  {transform: rotate(9deg); left: 29.166666666666668%}
+  42.5%  {transform: rotate(12deg); left: 28.819444444444443%}
+  45%  {transform: rotate(9deg); left: 28.47222222222222%}
+  47.5%  {transform: rotate(6deg); left: 28.125%}
+  50%  {transform: rotate(3deg); left: 27.77777777777778%}
+  52.5%  {transform: rotate(0deg); left: 27.430555555555557%}
+  55%  {transform: rotate(0deg); left: 27.083333333333332%;}
+  57.5%  {transform: rotate(1deg); left: 26.73611111111111%;}
+  60%  {transform: rotate(2deg); left: 26.38888888888889%}
+  62.5%  {transform: rotate(3deg); left: 26.041666666666668%}
+  65%  {transform: rotate(6deg); left: 25.694444444444443%}
+  67.5%  {transform: rotate(9deg); left: 25%}
+  70%  {transform: rotate(12deg); left: 23.61111111111111%}
+  72.5%  {transform: rotate(9deg); left: 22.22222222222222%}
+  75%  {transform: rotate(6deg); left: 20.833333333333336%}
+  77.5%  {transform: rotate(3deg); left: 19.444444444444446%}
+  80%  {transform: rotate(0deg); left: 18.055555555555554%}
+  82.5%  {transform: rotate(0deg); left: 16.666666666666664%;}
+  85%  {transform: rotate(1deg); left: 15.277777777777779%;}
+  87.5%  {transform: rotate(2deg); left: 13.88888888888889%}
+  90%  {transform: rotate(3deg); left: 12.5%}
+  92.5%  {transform: rotate(6deg); left: 11.11111111111111%}
+  95%  {transform: rotate(9deg); left: 9.722222222222223%}
+  97.5%  {transform: rotate(12deg); left: 8.333333333333332%}
+  100%  {transform: rotate(9deg); left: 6.944444444444445%}
+}
+
+@keyframes third-cow-go-left {
+  0%  {transform: rotate(0deg); left: 62.5%;}
+  2.5%  {transform: rotate(1deg); left: 62.15277777777778%;}
+  5%  {transform: rotate(2deg); left: 61.80555555555556%}
+  7.5%  {transform: rotate(3deg); left: 61.458333333333336%}
+  10%  {transform: rotate(6deg); left: 61.111111111111114%}
+  12.5%  {transform: rotate(9deg); left: 60.763888888888886%}
+  15%  {transform: rotate(12deg); left: 60.416666666666664%}
+  17.5%  {transform: rotate(9deg); left: 60.06944444444444%}
+  20%  {transform: rotate(6deg); left: 59.72222222222222%}
+  22.5%  {transform: rotate(3deg); left: 59.375%}
+  25%  {transform: rotate(0deg); left: 59.02777777777778%}
+  27.5%  {transform: rotate(0deg); left: 58.68055555555556%;}
+  30%  {transform: rotate(1deg); left: 58.333333333333336%;}
+  32.5%  {transform: rotate(2deg); left: 57.986111111111114%}
+  35%  {transform: rotate(3deg); left: 57.638888888888886%}
+  37.5%  {transform: rotate(6deg); left: 57.291666666666664%}
+  40%  {transform: rotate(9deg); left: 56.94444444444444%}
+  42.5%  {transform: rotate(12deg); left: 56.59722222222222%}
+  45%  {transform: rotate(9deg); left: 56.25%}
+  47.5%  {transform: rotate(6deg); left: 55.90277777777778%}
+  50%  {transform: rotate(3deg); left: 55.55555555555556%}
+  52.5%  {transform: rotate(0deg); left: 55.208333333333336%}
+  55%  {transform: rotate(0deg); left: 54.861111111111114%;}
+  57.5%  {transform: rotate(1deg); left: 54.513888888888886%;}
+  60%  {transform: rotate(2deg); left: 54.166666666666664%}
+  62.5%  {transform: rotate(3deg); left: 53.81944444444444%}
+  65%  {transform: rotate(6deg); left: 53.47222222222222%}
+  67.5%  {transform: rotate(9deg); left: 52.77777777777778%}
+  70%  {transform: rotate(12deg); left: 51.388888888888886%}
+  72.5%  {transform: rotate(9deg); left: 50%}
+  75%  {transform: rotate(6deg); left: 48.61111111111111%}
+  77.5%  {transform: rotate(3deg); left: 47.22222222222222%}
+  80%  {transform: rotate(0deg); left: 45.83333333333333%}
+  82.5%  {transform: rotate(0deg); left: 44.44444444444444%;}
+  85%  {transform: rotate(1deg); left: 43.05555555555556%;}
+  87.5%  {transform: rotate(2deg); left: 41.66666666666667%}
+  90%  {transform: rotate(3deg); left: 40.27777777777778%}
+  92.5%  {transform: rotate(6deg); left: 38.88888888888889%}
+  95%  {transform: rotate(9deg); left: 37.5%}
+  97.5%  {transform: rotate(12deg); left: 36.11111111111111%}
+  100%  {transform: rotate(9deg); left: 34.72222222222222%}
+}
+
+@keyframes fourth-cow-go-left {
+  0%  {transform: rotate(0deg); left: 104.16666666666667%;}
+  2.5%  {transform: rotate(1deg); left: 103.125%;}
+  5%  {transform: rotate(2deg); left: 102.08333333333333%}
+  7.5%  {transform: rotate(3deg); left: 101.04166666666667%}
+  10%  {transform: rotate(6deg); left: 100%}
+  12.5%  {transform: rotate(9deg); left: 98.95833333333334%}
+  15%  {transform: rotate(12deg); left: 97.91666666666666%}
+  17.5%  {transform: rotate(9deg); left: 96.875%}
+  20%  {transform: rotate(6deg); left: 95.83333333333334%}
+  22.5%  {transform: rotate(3deg); left: 94.79166666666666%}
+  25%  {transform: rotate(0deg); left: 93.75%}
+  27.5%  {transform: rotate(0deg); left: 92.70833333333334%;}
+  30%  {transform: rotate(1deg); left: 91.66666666666666%;}
+  32.5%  {transform: rotate(2deg); left: 90.625%}
+  35%  {transform: rotate(3deg); left: 89.58333333333334%}
+  37.5%  {transform: rotate(6deg); left: 88.54166666666666%}
+  40%  {transform: rotate(9deg); left: 87.5%}
+  42.5%  {transform: rotate(12deg); left: 86.45833333333334%}
+  45%  {transform: rotate(9deg); left: 85.41666666666666%}
+  47.5%  {transform: rotate(6deg); left: 84.375%}
+  50%  {transform: rotate(3deg); left: 83.33333333333334%}
+  52.5%  {transform: rotate(0deg); left: 82.29166666666666%}
+  55%  {transform: rotate(0deg); left: 81.25%;}
+  57.5%  {transform: rotate(1deg); left: 80.20833333333334%;}
+  60%  {transform: rotate(2deg); left: 79.16666666666666%}
+  62.5%  {transform: rotate(3deg); left: 78.125%}
+  65%  {transform: rotate(6deg); left: 77.08333333333334%}
+  67.5%  {transform: rotate(9deg); left: 76.04166666666666%}
+  70%  {transform: rotate(12deg); left: 75%}
+  72.5%  {transform: rotate(9deg); left: 73.95833333333334%}
+  75%  {transform: rotate(6deg); left: 72.91666666666666%}
+  77.5%  {transform: rotate(3deg); left: 71.875%}
+  80%  {transform: rotate(0deg); left: 70.83333333333334%}
+  82.5%  {transform: rotate(0deg); left: 69.79166666666666%;}
+  85%  {transform: rotate(1deg); left: 68.75%;}
+  87.5%  {transform: rotate(2deg); left: 67.70833333333334%}
+  90%  {transform: rotate(3deg); left: 66.66666666666666%}
+  92.5%  {transform: rotate(6deg); left: 65.625%}
+  95%  {transform: rotate(9deg); left: 64.58333333333334%}
+  97.5%  {transform: rotate(12deg); left: 63.541666666666664%}
+  100%  {transform: rotate(9deg); left: 62.5%}
+}
+
+
+@keyframes flip-left-edge-to-right {
+  0%  {display: none;}
+  50%  {left: -27.77777777777778vw; top: 40vh; display: none;}
+  55%  {left: -27.77777777777778vw; top: -40vh; display: none;}
+  60% {display: none;}
+  70% {display: none; left: 117vw; top: -40vh}
+  99% {display: none; left: 117vw; top: 40vh}
+  100% {display: block; left: 117vw;}
+}
 
 #cows {
   display: flex;
@@ -17,13 +443,13 @@
     position: absolute; 
 }
 
-#texts-about-cows {
+/* #texts-about-cows {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 .distance-one-iphonemax {
   left: 7.474747474747476%
@@ -85,172 +511,172 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes enter {
-  0%  {transform: rotate(0deg); left: 104.16666666666667%;}
-  2.5%  {transform: rotate(1deg); left: 103.125%;}
-  5%  {transform: rotate(2deg); left: 102.08333333333333%}
-  7.5%  {transform: rotate(3deg); left: 101.04166666666667%}
-  10%  {transform: rotate(6deg); left: 100%}
-  12.5%  {transform: rotate(9deg); left: 98.95833333333334%}
-  15%  {transform: rotate(12deg); left: 97.91666666666666%}
-  17.5%  {transform: rotate(9deg); left: 96.875%}
-  20%  {transform: rotate(6deg); left: 95.83333333333334%}
-  22.5%  {transform: rotate(3deg); left: 94.79166666666666%}
-  25%  {transform: rotate(0deg); left: 93.75%}
-  27.5%  {transform: rotate(0deg); left: 92.70833333333334%;}
-  30%  {transform: rotate(1deg); left: 91.66666666666666%;}
-  32.5%  {transform: rotate(2deg); left: 90.625%}
-  35%  {transform: rotate(3deg); left: 89.58333333333334%}
-  37.5%  {transform: rotate(6deg); left: 88.54166666666666%}
-  40%  {transform: rotate(9deg); left: 87.5%}
-  42.5%  {transform: rotate(12deg); left: 86.45833333333334%}
-  45%  {transform: rotate(9deg); left: 85.41666666666666%}
-  47.5%  {transform: rotate(6deg); left: 84.375%}
-  50%  {transform: rotate(3deg); left: 83.33333333333334%}
-  52.5%  {transform: rotate(0deg); left: 82.29166666666666%}
-  55%  {transform: rotate(0deg); left: 81.25%;}
-  57.5%  {transform: rotate(1deg); left: 80.20833333333334%;}
-  60%  {transform: rotate(2deg); left: 79.16666666666666%}
-  62.5%  {transform: rotate(3deg); left: 78.125%}
-  65%  {transform: rotate(6deg); left: 77.08333333333334%}
-  67.5%  {transform: rotate(9deg); left: 76.04166666666666%}
-  70%  {transform: rotate(12deg); left: 75%}
-  72.5%  {transform: rotate(9deg); left: 73.95833333333334%}
-  75%  {transform: rotate(6deg); left: 72.91666666666666%}
-  77.5%  {transform: rotate(3deg); left: 71.875%}
-  80%  {transform: rotate(0deg); left: 70.83333333333334%}
-  82.5%  {transform: rotate(0deg); left: 69.79166666666666%;}
-  85%  {transform: rotate(1deg); left: 68.75%;}
-  87.5%  {transform: rotate(2deg); left: 67.70833333333334%}
-  90%  {transform: rotate(3deg); left: 66.66666666666666%}
-  92.5%  {transform: rotate(6deg); left: 65.625%}
-  95%  {transform: rotate(9deg); left: 64.58333333333334%}
-  97.5%  {transform: rotate(12deg); left: 63.541666666666664%}
-  100%  {transform: rotate(9deg); left: 62.5%}
-}
-
-@keyframes enter-iphonemax {
-  0%  {transform: rotate(0deg); left: 112.12121212121214%;}
-  2.5%  {transform: rotate(1deg); left: 111.00000000000001%;}
-  5%  {transform: rotate(2deg); left: 109.87878787878789%}
-  7.5%  {transform: rotate(3deg); left: 108.75757575757574%}
-  10%  {transform: rotate(6deg); left: 107.63636363636364%}
-  12.5%  {transform: rotate(9deg); left: 106.5151515151515%}
-  15%  {transform: rotate(12deg); left: 105.39393939393939%}
-  17.5%  {transform: rotate(9deg); left: 104.27272727272727%}
-  20%  {transform: rotate(6deg); left: 103.15151515151513%}
-  22.5%  {transform: rotate(3deg); left: 102.03030303030303%}
-  25%  {transform: rotate(0deg); left: 100.9090909090909%}
-  27.5%  {transform: rotate(0deg); left: 99.78787878787877%;}
-  30%  {transform: rotate(1deg); left: 98.66666666666666%;}
-  32.5%  {transform: rotate(2deg); left: 97.54545454545455%}
-  35%  {transform: rotate(3deg); left: 96.42424242424241%}
-  37.5%  {transform: rotate(6deg); left: 95.30303030303031%}
-  40%  {transform: rotate(9deg); left: 94.18181818181817%}
-  42.5%  {transform: rotate(12deg); left: 93.06060606060606%}
-  45%  {transform: rotate(9deg); left: 91.93939393939394%}
-  47.5%  {transform: rotate(6deg); left: 90.81818181818181%}
-  50%  {transform: rotate(3deg); left: 89.6969696969697%}
-  52.5%  {transform: rotate(0deg); left: 88.57575757575758%}
-  55%  {transform: rotate(0deg); left: 87.45454545454545%;}
-  57.5%  {transform: rotate(1deg); left: 86.33333333333334%;}
-  60%  {transform: rotate(2deg); left: 85.21212121212122%}
-  62.5%  {transform: rotate(3deg); left: 84.0909090909091%}
-  65%  {transform: rotate(6deg); left: 82.96969696969697%}
-  67.5%  {transform: rotate(9deg); left: 81.84848484848484%}
-  70%  {transform: rotate(12deg); left: 80.72727272727272%}
-  72.5%  {transform: rotate(9deg); left: 79.60606060606061%}
-  75%  {transform: rotate(6deg); left: 78.48484848484848%}
-  77.5%  {transform: rotate(3deg); left: 77.36363636363637%}
-  80%  {transform: rotate(0deg); left: 76.24242424242425%}
-  82.5%  {transform: rotate(0deg); left: 75.12121212121212%;}
-  85%  {transform: rotate(1deg); left: 74%;}
-  87.5%  {transform: rotate(2deg); left: 72.87878787878789%}
-  90%  {transform: rotate(3deg); left: 71.75757575757576%}
-  92.5%  {transform: rotate(6deg); left: 70.63636363636364%}
-  95%  {transform: rotate(9deg); left: 69.51515151515152%}
-  97.5%  {transform: rotate(12deg); left: 68.39393939393939%}
-  100%  {transform: rotate(9deg); left: 67.27272727272727%}
-}
-
-@keyframes enter-galaxy {
-  0%  {transform: rotate(0deg); left: 116.67857142857143%;}
-  2.5%  {transform: rotate(1deg); left: 115.51178571428574%;}
-  5%  {transform: rotate(2deg); left: 114.34500000000003%;}
-  7.5%  {transform: rotate(3deg); left: 113.1782142857143%}
-  10%  {transform: rotate(6deg); left: 108.89999999999999%;}
-  12.5%  {transform: rotate(9deg); left: 110.84464285714286%;}
-  15%  {transform: rotate(12deg); left: 109.67785714285714%}
-  17.5%  {transform: rotate(9deg); left: 108.51107142857144%}
-  20%  {transform: rotate(6deg); left: 107.34428571428572%}
-  22.5%  {transform: rotate(3deg); left: 106.17750000000001%}
-  25%  {transform: rotate(0deg); left: 105.01071428571429%}
-  27.5%  {transform: rotate(0deg); left: 103.84392857142859%;}
-  30%  {transform: rotate(1deg); left: 102.67714285714287%;}
-  32.5%  {transform: rotate(2deg); left: 101.51035714285716%}
-  35%  {transform: rotate(3deg); left: 100.34357142857144%}
-  37.5%  {transform: rotate(6deg); left: 99.17678571428571%}
-  40%  {transform: rotate(9deg); left: 98.00999999999999%}
-  42.5%  {transform: rotate(12deg); left: 96.84321428571428%}
-  45%  {transform: rotate(9deg); left: 95.6764285714286%}
-  47.5%  {transform: rotate(6deg); left: 94.50964285714288%}
-  50%  {transform: rotate(3deg); left: 93.34285714285716%}
-  52.5%  {transform: rotate(0deg); left: 92.17607142857143%}
-  55%  {transform: rotate(0deg); left: 91.00928571428572%;}
-  57.5%  {transform: rotate(1deg); left: 89.84250000000002%;}
-  60%  {transform: rotate(2deg); left: 88.67571428571429%}
-  62.5%  {transform: rotate(3deg); left: 87.50892857142857%}
-  65%  {transform: rotate(6deg); left: 86.34214285714286%}
-  67.5%  {transform: rotate(9deg); left: 85.17535714285714%}
-  70%  {transform: rotate(12deg); left: 84.00857142857144%}
-  72.5%  {transform: rotate(9deg); left: 82.8417857142857%}
-  75%  {transform: rotate(6deg); left: 81.675%}
-  77.5%  {transform: rotate(3deg); left: 80.5082142857143%}
-  80%  {transform: rotate(0deg); left: 79.34142857142858%}
-  82.5%  {transform: rotate(0deg); left: 78.17464285714287%;}
-  85%  {transform: rotate(1deg); left: 77.00785714285715%;}
-  87.5%  {transform: rotate(2deg); left: 75.84107142857144%}
-  90%  {transform: rotate(3deg); left: 74.67428571428573%}
-  92.5%  {transform: rotate(6deg); left: 73.50750000000002%}
-  95%  {transform: rotate(9deg); left: 72.34071428571428%}
-  97.5%  {transform: rotate(12deg); left: 71.17392857142858%}
-  100%  {transform: rotate(9deg); left: 70.00714285714285%}
-}
-
 #minus {
+  font-size: 1.8vh;
+  width: 175px;
   top: 150px;
   left: 13.88888888888889%;
   position: absolute;
+  opacity: 0;
+  animation: 
+    fade-in-and-out 7.5s linear 3s normal 1 forwards,
+    fade-in-and-out 7.5s linear 14s normal 1 forwards,
+    fade-in-and-out 7.5s linear 25s normal 1 forwards,
+    fade-in-and-out 7.5s linear 36s normal 1 forwards,
+    fade-in-and-out 7.5s linear 47s normal 1 forwards,
+    fade-in-and-out 7.5s linear 58s normal 1 forwards,
+    fade-in-and-out 7.5s linear 69s normal 1 forwards,
+    fade-in-and-out 7.5s linear 80s normal 1 forwards,
+    fade-in-and-out 7.5s linear 91s normal 1 forwards,
+    fade-in-and-out 7.5s linear 102s normal 1 forwards,
+    fade-in-and-out 7.5s linear 113s normal 1 forwards,
+    fade-in-and-out 7.5s linear 124s normal 1 forwards,
+    fade-in-and-out 7.5s linear 135s normal 1 forwards,
+    fade-in-and-out 7.5s linear 146s normal 1 forwards,
+    fade-in-and-out 7.5s linear 157s normal 1 forwards,
+    fade-in-and-out 7.5s linear 168s normal 1 forwards,
+    fade-in-and-out 7.5s linear 179s normal 1 forwards,
+    fade-in-and-out 7.5s linear 190s normal 1 forwards;
 }
 
 #minus-galaxy {
+  font-size: 1.5vh;
   top: 200px;
+  width: 70px;
   left: 3.571428571428571%;
   position: absolute;
+  opacity: 0;
+  animation: 
+    fade-in-and-out 7.5s linear 3s normal 1 forwards,
+    fade-in-and-out 7.5s linear 14s normal 1 forwards,
+    fade-in-and-out 7.5s linear 25s normal 1 forwards,
+    fade-in-and-out 7.5s linear 36s normal 1 forwards,
+    fade-in-and-out 7.5s linear 47s normal 1 forwards,
+    fade-in-and-out 7.5s linear 58s normal 1 forwards,
+    fade-in-and-out 7.5s linear 69s normal 1 forwards,
+    fade-in-and-out 7.5s linear 80s normal 1 forwards,
+    fade-in-and-out 7.5s linear 91s normal 1 forwards,
+    fade-in-and-out 7.5s linear 102s normal 1 forwards,
+    fade-in-and-out 7.5s linear 113s normal 1 forwards,
+    fade-in-and-out 7.5s linear 124s normal 1 forwards,
+    fade-in-and-out 7.5s linear 135s normal 1 forwards,
+    fade-in-and-out 7.5s linear 146s normal 1 forwards,
+    fade-in-and-out 7.5s linear 157s normal 1 forwards,
+    fade-in-and-out 7.5s linear 168s normal 1 forwards,
+    fade-in-and-out 7.5s linear 179s normal 1 forwards,
+    fade-in-and-out 7.5s linear 190s normal 1 forwards;
 }
 
 #minus-iphonemax {
+  font-size: 1.5vh;
   top: 200px;
   left: 10px;
+  width: 80px;
   position: absolute;
+  opacity: 0;
+  animation: 
+    fade-in-and-out 7.5s linear 3s normal 1 forwards,
+    fade-in-and-out 7.5s linear 14s normal 1 forwards,
+    fade-in-and-out 7.5s linear 25s normal 1 forwards,
+    fade-in-and-out 7.5s linear 36s normal 1 forwards,
+    fade-in-and-out 7.5s linear 47s normal 1 forwards,
+    fade-in-and-out 7.5s linear 58s normal 1 forwards,
+    fade-in-and-out 7.5s linear 69s normal 1 forwards,
+    fade-in-and-out 7.5s linear 80s normal 1 forwards,
+    fade-in-and-out 7.5s linear 91s normal 1 forwards,
+    fade-in-and-out 7.5s linear 102s normal 1 forwards,
+    fade-in-and-out 7.5s linear 113s normal 1 forwards,
+    fade-in-and-out 7.5s linear 124s normal 1 forwards,
+    fade-in-and-out 7.5s linear 135s normal 1 forwards,
+    fade-in-and-out 7.5s linear 146s normal 1 forwards,
+    fade-in-and-out 7.5s linear 157s normal 1 forwards,
+    fade-in-and-out 7.5s linear 168s normal 1 forwards,
+    fade-in-and-out 7.5s linear 179s normal 1 forwards,
+    fade-in-and-out 7.5s linear 190s normal 1 forwards;
 }
 
 #plus {
+  font-size: 1.8vh;
+  width: 150px;
   top: 150px;
   left: 83.33333333333334%;
   position: absolute;
+  opacity: 0;
+  animation: 
+    fade-in-and-out 7.5s linear 3s normal 1 forwards,
+    fade-in-and-out 7.5s linear 14s normal 1 forwards,
+    fade-in-and-out 7.5s linear 25s normal 1 forwards,
+    fade-in-and-out 7.5s linear 36s normal 1 forwards,
+    fade-in-and-out 7.5s linear 47s normal 1 forwards,
+    fade-in-and-out 7.5s linear 58s normal 1 forwards,
+    fade-in-and-out 7.5s linear 69s normal 1 forwards,
+    fade-in-and-out 7.5s linear 80s normal 1 forwards,
+    fade-in-and-out 7.5s linear 91s normal 1 forwards,
+    fade-in-and-out 7.5s linear 102s normal 1 forwards,
+    fade-in-and-out 7.5s linear 113s normal 1 forwards,
+    fade-in-and-out 7.5s linear 124s normal 1 forwards,
+    fade-in-and-out 7.5s linear 135s normal 1 forwards,
+    fade-in-and-out 7.5s linear 146s normal 1 forwards,
+    fade-in-and-out 7.5s linear 157s normal 1 forwards,
+    fade-in-and-out 7.5s linear 168s normal 1 forwards,
+    fade-in-and-out 7.5s linear 179s normal 1 forwards,
+    fade-in-and-out 7.5s linear 190s normal 1 forwards;
 }
 
 #plus-galaxy {
+  font-size: 1.5vh;
+  width: 70px;
   top: 200px;
   right: 3.571428571428571px;
-  position: absolute;
+  position: absolute;  
+  opacity: 0;
+  animation: 
+    fade-in-and-out 7.5s linear 3s normal 1 forwards,
+    fade-in-and-out 7.5s linear 14s normal 1 forwards,
+    fade-in-and-out 7.5s linear 25s normal 1 forwards,
+    fade-in-and-out 7.5s linear 36s normal 1 forwards,
+    fade-in-and-out 7.5s linear 47s normal 1 forwards,
+    fade-in-and-out 7.5s linear 58s normal 1 forwards,
+    fade-in-and-out 7.5s linear 69s normal 1 forwards,
+    fade-in-and-out 7.5s linear 80s normal 1 forwards,
+    fade-in-and-out 7.5s linear 91s normal 1 forwards,
+    fade-in-and-out 7.5s linear 102s normal 1 forwards,
+    fade-in-and-out 7.5s linear 113s normal 1 forwards,
+    fade-in-and-out 7.5s linear 124s normal 1 forwards,
+    fade-in-and-out 7.5s linear 135s normal 1 forwards,
+    fade-in-and-out 7.5s linear 146s normal 1 forwards,
+    fade-in-and-out 7.5s linear 157s normal 1 forwards,
+    fade-in-and-out 7.5s linear 168s normal 1 forwards,
+    fade-in-and-out 7.5s linear 179s normal 1 forwards,
+    fade-in-and-out 7.5s linear 190s normal 1 forwards;
 }
 
 #plus-iphonemax {
+  font-size: 1.5vh;
   top: 200px;
+  width: 80px;
   right: 10px;
   position: absolute;
+  opacity: 0;
+  animation: 
+    fade-in-and-out 7.5s linear 3s normal 1 forwards,
+    fade-in-and-out 7.5s linear 14s normal 1 forwards,
+    fade-in-and-out 7.5s linear 25s normal 1 forwards,
+    fade-in-and-out 7.5s linear 36s normal 1 forwards,
+    fade-in-and-out 7.5s linear 47s normal 1 forwards,
+    fade-in-and-out 7.5s linear 58s normal 1 forwards,
+    fade-in-and-out 7.5s linear 69s normal 1 forwards,
+    fade-in-and-out 7.5s linear 80s normal 1 forwards,
+    fade-in-and-out 7.5s linear 91s normal 1 forwards,
+    fade-in-and-out 7.5s linear 102s normal 1 forwards,
+    fade-in-and-out 7.5s linear 113s normal 1 forwards,
+    fade-in-and-out 7.5s linear 124s normal 1 forwards,
+    fade-in-and-out 7.5s linear 135s normal 1 forwards,
+    fade-in-and-out 7.5s linear 146s normal 1 forwards,
+    fade-in-and-out 7.5s linear 157s normal 1 forwards,
+    fade-in-and-out 7.5s linear 168s normal 1 forwards,
+    fade-in-and-out 7.5s linear 179s normal 1 forwards,
+    fade-in-and-out 7.5s linear 190s normal 1 forwards;
 }
 
 .first-cow {
@@ -276,13 +702,13 @@
   /* left: -270px; */
   position: absolute;
 }
-
+/* 
 .second-cow {
   animation-name: second-cow-go-left;
   animation-duration: 6s;
   animation-fill-mode: forwards;
   position: absolute;
-}
+} */
 
 .second-cow-galaxy {
   animation-name: second-cow-go-left-galaxy;
@@ -318,398 +744,6 @@
   animation-fill-mode: forwards;
   position: absolute;
 }
-
-@keyframes second-cow-go-left {
-  0%  {transform: rotate(0deg); left: 34.72222222222222%;}
-  2.5%  {transform: rotate(1deg); left: 34.375%;}
-  5%  {transform: rotate(2deg); left: 34.02777777777778%}
-  7.5%  {transform: rotate(3deg); left: 33.68055555555556%}
-  10%  {transform: rotate(6deg); left: 33.33333333333333%}
-  12.5%  {transform: rotate(9deg); left: 32.98611111111111%}
-  15%  {transform: rotate(12deg); left: 32.63888888888889%}
-  17.5%  {transform: rotate(9deg); left: 32.29166666666667%}
-  20%  {transform: rotate(6deg); left: 31.944444444444443%}
-  22.5%  {transform: rotate(3deg); left: 31.59722222222222%}
-  25%  {transform: rotate(0deg); left: 31.25%}
-  27.5%  {transform: rotate(0deg); left: 30.90277777777778%;}
-  30%  {transform: rotate(1deg); left: 30.555555555555557%;}
-  32.5%  {transform: rotate(2deg); left: 30.208333333333332%}
-  35%  {transform: rotate(3deg); left: 29.86111111111111%}
-  37.5%  {transform: rotate(6deg); left: 29.51388888888889%}
-  40%  {transform: rotate(9deg); left: 29.166666666666668%}
-  42.5%  {transform: rotate(12deg); left: 28.819444444444443%}
-  45%  {transform: rotate(9deg); left: 28.47222222222222%}
-  47.5%  {transform: rotate(6deg); left: 28.125%}
-  50%  {transform: rotate(3deg); left: 27.77777777777778%}
-  52.5%  {transform: rotate(0deg); left: 27.430555555555557%}
-  55%  {transform: rotate(0deg); left: 27.083333333333332%;}
-  57.5%  {transform: rotate(1deg); left: 26.73611111111111%;}
-  60%  {transform: rotate(2deg); left: 26.38888888888889%}
-  62.5%  {transform: rotate(3deg); left: 26.041666666666668%}
-  65%  {transform: rotate(6deg); left: 25.694444444444443%}
-  67.5%  {transform: rotate(9deg); left: 25%}
-  70%  {transform: rotate(12deg); left: 23.61111111111111%}
-  72.5%  {transform: rotate(9deg); left: 22.22222222222222%}
-  75%  {transform: rotate(6deg); left: 20.833333333333336%}
-  77.5%  {transform: rotate(3deg); left: 19.444444444444446%}
-  80%  {transform: rotate(0deg); left: 18.055555555555554%}
-  82.5%  {transform: rotate(0deg); left: 16.666666666666664%;}
-  85%  {transform: rotate(1deg); left: 15.277777777777779%;}
-  87.5%  {transform: rotate(2deg); left: 13.88888888888889%}
-  90%  {transform: rotate(3deg); left: 12.5%}
-  92.5%  {transform: rotate(6deg); left: 11.11111111111111%}
-  95%  {transform: rotate(9deg); left: 9.722222222222223%}
-  97.5%  {transform: rotate(12deg); left: 8.333333333333332%}
-  100%  {transform: rotate(9deg); left: 6.944444444444445%}
-}
-
-
-@keyframes second-cow-go-left-iphonemax {
-  0%  {transform: rotate(0deg); left: 37.37373737373738%;}
-  2.5%  {transform: rotate(1deg); left: 37%;}
-  5%  {transform: rotate(2deg); left: 36.62626262626263%}
-  7.5%  {transform: rotate(3deg); left: 36.25252525252525%}
-  10%  {transform: rotate(6deg); left: 35.87878787878788%}
-  12.5%  {transform: rotate(9deg); left: 35.505050505050505%}
-  15%  {transform: rotate(12deg); left: 35.13131313131313%}
-  17.5%  {transform: rotate(9deg); left: 34.75757575757576%}
-  20%  {transform: rotate(6deg); left: 34.38383838383838%}
-  22.5%  {transform: rotate(3deg); left: 34.01010101010101%}
-  25%  {transform: rotate(0deg); left: 33.63636363636363%}
-  27.5%  {transform: rotate(0deg); left: 33.26262626262626%;}
-  30%  {transform: rotate(1deg); left: 32.88888888888889%;}
-  32.5%  {transform: rotate(2deg); left: 32.515151515151516%}
-  35%  {transform: rotate(3deg); left: 32.141414141414145%}
-  37.5%  {transform: rotate(6deg); left: 31.767676767676768%}
-  40%  {transform: rotate(9deg); left: 31.393939393939398%}
-  42.5%  {transform: rotate(12deg); left: 31.02020202020202%}
-  45%  {transform: rotate(9deg); left: 30.64646464646465%}
-  47.5%  {transform: rotate(6deg); left: 30.272727272727273%}
-  50%  {transform: rotate(3deg); left: 29.898989898989903%}
-  52.5%  {transform: rotate(0deg); left: 29.525252525252526%}
-  55%  {transform: rotate(0deg); left: 29.15151515151515%;}
-  57.5%  {transform: rotate(1deg); left: 28.777777777777775%;}
-  60%  {transform: rotate(2deg); left: 28.404040404040405%}
-  62.5%  {transform: rotate(3deg); left: 28.030303030303035%}
-  65%  {transform: rotate(6deg); left: 27.656565656565657%}
-  67.5%  {transform: rotate(9deg); left: 26.90909090909091%}
-  70%  {transform: rotate(12deg); left: 24.9696969%}
-  72.5%  {transform: rotate(9deg); left: 23.919191919191924%}
-  75%  {transform: rotate(6deg); left: 22.424242424242426%}
-  77.5%  {transform: rotate(3deg); left: 20.92929292929293%}
-  80%  {transform: rotate(0deg); left: 19.434343434343436%}
-  82.5%  {transform: rotate(0deg); left: 17.93939393939394%;}
-  85%  {transform: rotate(1deg); left: 16.444444444444446%;}
-  87.5%  {transform: rotate(2deg); left: 14.949494949494952%}
-  90%  {transform: rotate(3deg); left: 13.454545454545455%}
-  92.5%  {transform: rotate(6deg); left: 11.959595959595962%}
-  95%  {transform: rotate(9deg); left: 10.464646464646465%}
-  97.5%  {transform: rotate(12deg); left: 8.96969696969697%}
-  100%  {transform: rotate(9deg); left: 7.474747474747476%}
-}
-
-
-@keyframes second-cow-go-left-galaxy {
-  0%  {transform: rotate(0deg); left: 38.892857142857146%;}
-  2.5%  {transform: rotate(1deg); left: 38.503928571428574%;}
-  5%  {transform: rotate(2deg); left: 38.11500000000001%}
-  7.5%  {transform: rotate(3deg); left: 37.72607142857144%;}
-  10%  {transform: rotate(6deg); left: 37.337142857142865%;}
-  12.5%  {transform: rotate(9deg); left: 36.948214285714286%}
-  15%  {transform: rotate(12deg); left: 36.559285714285714%}
-  17.5%  {transform: rotate(9deg); left: 36.17035714285714%}
-  20%  {transform: rotate(6deg); left: 35.78142857142858%}
-  22.5%  {transform: rotate(3deg); left: 35.3925%}
-  25%  {transform: rotate(0deg); left: 35.003571428571426%}
-  27.5%  {transform: rotate(0deg); left: 34.614642857142854%;}
-  30%  {transform: rotate(1deg); left: 34.22571428571429%;}
-  32.5%  {transform: rotate(2deg); left: 33.83678571428572%}
-  35%  {transform: rotate(3deg); left: 33.447857142857146%}
-  37.5%  {transform: rotate(6deg); left: 33.05892857142857%}
-  40%  {transform: rotate(9deg); left: 32.67%}
-  42.5%  {transform: rotate(12deg); left: 32.28107142857144%}
-  45%  {transform: rotate(9deg); left: 31.892142857142865%}
-  47.5%  {transform: rotate(6deg); left: 31.503214285714286%}
-  50%  {transform: rotate(3deg); left: 31.114285714285717%}
-  52.5%  {transform: rotate(0deg); left: 30.725357142857145%}
-  55%  {transform: rotate(0deg); left: 30.33642857142858%;}
-  57.5%  {transform: rotate(1deg); left: 29.947500000000005%;}
-  60%  {transform: rotate(2deg); left: 29.558571428571433%}
-  62.5%  {transform: rotate(3deg); left: 29.169642857142858%}
-  65%  {transform: rotate(6deg); left: 28.780714285714293%}
-  67.5%  {transform: rotate(9deg); left: 28.002857142857145%}
-  70%  {transform: rotate(12deg); left: 26.447142857142858%}
-  72.5%  {transform: rotate(9deg); left: 24.891428571428577%}
-  75%  {transform: rotate(6deg); left: 23.33571428571429%}
-  77.5%  {transform: rotate(3deg); left: 21.78%}
-  80%  {transform: rotate(0deg); left: 20.224285714285713%}
-  82.5%  {transform: rotate(0deg); left: 18.668571428571433%;}
-  85%  {transform: rotate(1deg); left: 17.112857142857145%;}
-  87.5%  {transform: rotate(2deg); left: 15.557142857142859%}
-  90%  {transform: rotate(3deg); left: 14.001428571428573%}
-  92.5%  {transform: rotate(6deg); left: 12.445714285714288%}
-  95%  {transform: rotate(9deg); left: 10.89%}
-  97.5%  {transform: rotate(12deg); left: 9.334285714285716%}
-  100%  {transform: rotate(9deg); left: 7.778571428571429%}
-}
-
-@keyframes third-cow-go-left-galaxy {
-  0%  {transform: rotate(0deg); left: 70.00714285714285%;}
-  2.5%  {transform: rotate(1deg); left: 69.61821428571429%;}
-  5%  {transform: rotate(2deg); left: 69.22928571428571%}
-  7.5%  {transform: rotate(3deg); left: 68.84035714285714%}
-  10%  {transform: rotate(6deg); left: 68.45142857142858%}
-  12.5%  {transform: rotate(9deg); left: 68.45142857142858%}
-  15%  {transform: rotate(12deg); left: 67.67357142857144%}
-  17.5%  {transform: rotate(9deg); left: 67.28464285714286%}
-  20%  {transform: rotate(6deg); left: 66.89571428571429%}
-  22.5%  {transform: rotate(3deg); left: 66.50678571428573%}
-  25%  {transform: rotate(0deg); left: 66.11785714285713%}
-  27.5%  {transform: rotate(0deg); left: 65.72892857142858%;}
-  30%  {transform: rotate(1deg); left: 65.34%;}
-  32.5%  {transform: rotate(2deg); left: 64.95107142857144%}
-  35%  {transform: rotate(3deg); left: 64.56214285714287%}
-  37.5%  {transform: rotate(6deg); left: 64.17321428571428%}
-  40%  {transform: rotate(9deg); left: 63.78428571428573%}
-  42.5%  {transform: rotate(12deg); left: 63.395357142857144%}
-  45%  {transform: rotate(9deg); left: 63.00642857142857%}
-  47.5%  {transform: rotate(6deg); left: 62.617500000000014%}
-  50%  {transform: rotate(3deg); left: 62.228571428571435%}
-  52.5%  {transform: rotate(0deg); left: 61.83964285714286%}
-  55%  {transform: rotate(0deg); left: 61.45071428571429%;}
-  57.5%  {transform: rotate(1deg); left: 61.06178571428572%;}
-  60%  {transform: rotate(2deg); left: 60.67285714285716%}
-  62.5%  {transform: rotate(3deg); left: 60.28392857142858%}
-  65%  {transform: rotate(6deg); left: 59.89500000000001%}
-  67.5%  {transform: rotate(9deg); left: 59.117142857142866%  }
-  70%  {transform: rotate(12deg); left: 57.561428571428586%  }
-  72.5%  {transform: rotate(9deg); left: 56.00571428571429%  }
-  75%  {transform: rotate(6deg); left: 54.449999999999996%  }
-  77.5%  {transform: rotate(3deg); left: 52.894285714285715%  }
-  80%  {transform: rotate(0deg); left: 51.338571428571434%  }
-  82.5%  {transform: rotate(0deg); left: 49.782857142857154%;}
-  85%  {transform: rotate(1deg); left: 48.227142857142866%;}
-  87.5%  {transform: rotate(2deg); left: 46.67142857142858%}
-  90%  {transform: rotate(3deg); left: 45.11571428571429%}
-  92.5%  {transform: rotate(6deg); left: 43.56%}
-  95%  {transform: rotate(9deg); left: 42.00428571428572%}
-  97.5%  {transform: rotate(12deg); left: 40.44857142857143%}
-  100%  {transform: rotate(9deg); left: 38.892857142857146%}
-}
-
-@keyframes third-cow-go-left {
-  0%  {transform: rotate(0deg); left: 62.5%;}
-  2.5%  {transform: rotate(1deg); left: 62.15277777777778%;}
-  5%  {transform: rotate(2deg); left: 61.80555555555556%}
-  7.5%  {transform: rotate(3deg); left: 61.458333333333336%}
-  10%  {transform: rotate(6deg); left: 61.111111111111114%}
-  12.5%  {transform: rotate(9deg); left: 60.763888888888886%}
-  15%  {transform: rotate(12deg); left: 60.416666666666664%}
-  17.5%  {transform: rotate(9deg); left: 60.06944444444444%}
-  20%  {transform: rotate(6deg); left: 59.72222222222222%}
-  22.5%  {transform: rotate(3deg); left: 59.375%}
-  25%  {transform: rotate(0deg); left: 59.02777777777778%}
-  27.5%  {transform: rotate(0deg); left: 58.68055555555556%;}
-  30%  {transform: rotate(1deg); left: 58.333333333333336%;}
-  32.5%  {transform: rotate(2deg); left: 57.986111111111114%}
-  35%  {transform: rotate(3deg); left: 57.638888888888886%}
-  37.5%  {transform: rotate(6deg); left: 57.291666666666664%}
-  40%  {transform: rotate(9deg); left: 56.94444444444444%}
-  42.5%  {transform: rotate(12deg); left: 56.59722222222222%}
-  45%  {transform: rotate(9deg); left: 56.25%}
-  47.5%  {transform: rotate(6deg); left: 55.90277777777778%}
-  50%  {transform: rotate(3deg); left: 55.55555555555556%}
-  52.5%  {transform: rotate(0deg); left: 55.208333333333336%}
-  55%  {transform: rotate(0deg); left: 54.861111111111114%;}
-  57.5%  {transform: rotate(1deg); left: 54.513888888888886%;}
-  60%  {transform: rotate(2deg); left: 54.166666666666664%}
-  62.5%  {transform: rotate(3deg); left: 53.81944444444444%}
-  65%  {transform: rotate(6deg); left: 53.47222222222222%}
-  67.5%  {transform: rotate(9deg); left: 52.77777777777778%}
-  70%  {transform: rotate(12deg); left: 51.388888888888886%}
-  72.5%  {transform: rotate(9deg); left: 50%}
-  75%  {transform: rotate(6deg); left: 48.61111111111111%}
-  77.5%  {transform: rotate(3deg); left: 47.22222222222222%}
-  80%  {transform: rotate(0deg); left: 45.83333333333333%}
-  82.5%  {transform: rotate(0deg); left: 44.44444444444444%;}
-  85%  {transform: rotate(1deg); left: 43.05555555555556%;}
-  87.5%  {transform: rotate(2deg); left: 41.66666666666667%}
-  90%  {transform: rotate(3deg); left: 40.27777777777778%}
-  92.5%  {transform: rotate(6deg); left: 38.88888888888889%}
-  95%  {transform: rotate(9deg); left: 37.5%}
-  97.5%  {transform: rotate(12deg); left: 36.11111111111111%}
-  100%  {transform: rotate(9deg); left: 34.72222222222222%}
-}
-
-@keyframes third-cow-go-left-iphonemax {
-  0%  {transform: rotate(0deg); left: 67.27272727272727%;}
-  2.5%  {transform: rotate(1deg); left: 66.8989898989899%;}
-  5%  {transform: rotate(2deg); left: 66.52525252525253%}
-  7.5%  {transform: rotate(3deg); left: 66.15151515151516%}
-  10%  {transform: rotate(6deg); left: 65.77777777777779%}
-  12.5%  {transform: rotate(9deg); left: 65.40404040404042%}
-  15%  {transform: rotate(12deg); left: 65.03030303030303%}
-  17.5%  {transform: rotate(9deg); left: 64.65656565656566%}
-  20%  {transform: rotate(6deg); left: 64.28282828282829%}
-  22.5%  {transform: rotate(3deg); left: 63.90909090909091%}
-  25%  {transform: rotate(0deg); left: 63.90909090909091%}
-  27.5%  {transform: rotate(0deg); left: 63.161616161616166%;}
-  30%  {transform: rotate(1deg); left: 62.787878787878796%;}
-  32.5%  {transform: rotate(2deg); left: 62.41414141414141%}
-  35%  {transform: rotate(3deg); left: 62.04040404040404%}
-  37.5%  {transform: rotate(6deg); left: 61.66666666666667%}
-  40%  {transform: rotate(9deg); left: 61.2929292929293%}
-  42.5%  {transform: rotate(12deg); left: 60.91919191919192%}
-  45%  {transform: rotate(9deg); left: 60.54545454545455%}
-  47.5%  {transform: rotate(6deg); left: 60.17171717171718%}
-  50%  {transform: rotate(3deg); left: 59.79797979797979%}
-  52.5%  {transform: rotate(0deg); left: 59.42424242424242%}
-  55%  {transform: rotate(0deg); left: 59.05050505050505%;}
-  57.5%  {transform: rotate(1deg); left: 58.67676767676768%;}
-  60%  {transform: rotate(2deg); left: 58.3030303030303%}
-  62.5%  {transform: rotate(3deg); left: 57.92929292929292%}
-  65%  {transform: rotate(6deg); left: 57.55555555555555%}
-  67.5%  {transform: rotate(9deg); left: 56.80808080808081%}
-  70%  {transform: rotate(12deg); left: 55.313131313131315%}
-  72.5%  {transform: rotate(9deg); left: 53.81818181818182%}
-  75%  {transform: rotate(6deg); left: 52.323232323232325%}
-  77.5%  {transform: rotate(3deg); left: 50.82828282828282%}
-  80%  {transform: rotate(0deg); left: 49.33333333333333%}
-  82.5%  {transform: rotate(0deg); left: 47.838383838383834%;}
-  85%  {transform: rotate(1deg); left: 46.34343434343434%;}
-  87.5%  {transform: rotate(2deg); left: 44.84848484848485%}
-  90%  {transform: rotate(3deg); left: 43.35353535353535%}
-  92.5%  {transform: rotate(6deg); left: 41.858585858585855%}
-  95%  {transform: rotate(9deg); left: 40.36363636363636%}
-  97.5%  {transform: rotate(12deg); left: 38.86868686868687%}
-  100%  {transform: rotate(9deg); left: 37.37373737373737%}
-}
-
-@keyframes leave {
-  0%  {transform: rotate(0deg); left: 6.944444444444445%;}
-  2.5%  {transform: rotate(1deg); left: 6.25%;}
-  5%  {transform: rotate(2deg); left: 5.555555555555555%}
-  7.5%  {transform: rotate(3deg); left: 4.861111111111112%}
-  10%  {transform: rotate(6deg); left: 4.166666666666666%}
-  12.5%  {transform: rotate(9deg); left: 3.4722222222222223%}
-  15%  {transform: rotate(12deg); left: 2.7777777777777777%}
-  17.5%  {transform: rotate(9deg); left: 2.083333333333333%}
-  20%  {transform: rotate(6deg); left: 1.3888888888888888%}
-  22.5%  {transform: rotate(3deg); left: 0.6944444444444444%}
-  25%  {transform: rotate(0deg); left: 0%}
-  27.5%  {transform: rotate(0deg); left: -0.6944444444444444%;}
-  30%  {transform: rotate(1deg); left: -1.3888888888888888%;}
-  32.5%  {transform: rotate(2deg); left: -2.083333333333333%}
-  35%  {transform: rotate(3deg); left: -2.7777777777777777%}
-  37.5%  {transform: rotate(6deg); left: -4.166666666666666%}
-  40%  {transform: rotate(9deg); left: -5.555555555555555%}
-  42.5%  {transform: rotate(12deg); left: -6.944444444444445%}
-  45%  {transform: rotate(9deg); left: -8.333333333333332%}
-  47.5%  {transform: rotate(6deg); left: -9.722222222222223%}
-  50%  {transform: rotate(3deg); left: -11.11111111111111%}
-  52.5%  {transform: rotate(0deg); left: -12.5%}
-  55%  {transform: rotate(0deg); left: -13.88888888888889%;}
-  57.5%  {transform: rotate(1deg); left: -15.277777777777779%;}
-  60%  {transform: rotate(2deg); left: -16.666666666666664%}
-  62.5%  {transform: rotate(3deg); left: -18.055555555555554%}
-  65%  {transform: rotate(6deg); left: -19.444444444444446%}
-  67.5%  {transform: rotate(9deg); left: -20.833333333333336%}
-  70%  {transform: rotate(12deg); left: -22.22222222222222%}
-  72.5%  {transform: rotate(9deg); left: -23.61111111111111%}
-  75%  {transform: rotate(6deg); left: -25%}
-  77.5%  {transform: rotate(3deg); left: -26.38888888888889%}
-  80%  {transform: rotate(0deg); left: -27.77777777777778%}
-  100%  {transform: rotate(9deg); left: -27.77777777777778%}
-}
-
-@keyframes leave-iphonemax {
-  0%  {transform: rotate(0deg); left: 7.474747474747474%;}
-  2.5%  {transform: rotate(1deg); left: 6.7272727272727275%;}
-  5%  {transform: rotate(2deg); left: 5.979797979797979%}
-  7.5%  {transform: rotate(3deg); left: 5.232323232323232%}
-  10%  {transform: rotate(6deg); left: 4.484848484848484%}
-  12.5%  {transform: rotate(9deg); left: 3.737373737373737%}
-  15%  {transform: rotate(12deg); left: 2.9898989898989896%}
-  17.5%  {transform: rotate(9deg); left: 2.242424242424242%}
-  20%  {transform: rotate(6deg); left: 1.4949494949494948%}
-  22.5%  {transform: rotate(3deg); left: 0.7474747474747474%}
-  25%  {transform: rotate(0deg); left: 0px}
-  27.5%  {transform: rotate(0deg); left: -0.7474747474747474%;}
-  30%  {transform: rotate(1deg); left: -1.4949494949494948%;}
-  32.5%  {transform: rotate(2deg); left: -2.242424242424242%}
-  35%  {transform: rotate(3deg); left: -2.9898989898989896%}
-  37.5%  {transform: rotate(6deg); left: -4.484848484848484%}
-  40%  {transform: rotate(9deg); left: -5.979797979797979%}
-  42.5%  {transform: rotate(12deg); left: -7.474747474747474%}
-  45%  {transform: rotate(9deg); left: -8.969696969696969%}
-  47.5%  {transform: rotate(6deg); left: -10.464646464646464%}
-  50%  {transform: rotate(3deg); left: -11.959595959595958%}
-  52.5%  {transform: rotate(0deg); left: -13.454545454545455%}
-  55%  {transform: rotate(0deg); left: -14.949494949494948%;}
-  57.5%  {transform: rotate(1deg); left: -16.444444444444446%;}
-  60%  {transform: rotate(2deg); left: -17.939393939393938%}
-  62.5%  {transform: rotate(3deg); left: -19.434343434343436%}
-  65%  {transform: rotate(6deg); left: -20.929292929292927%}
-  67.5%  {transform: rotate(9deg); left: -22.424242424242426%}
-  70%  {transform: rotate(12deg); left: -23.919191919191917%}
-  72.5%  {transform: rotate(9deg); left: -25.41414141414141%}
-  75%  {transform: rotate(6deg); left: -26.90909090909091%}
-  77.5%  {transform: rotate(3deg); left: -28.404040404040405%}
-  80%  {transform: rotate(0deg); left: -29.898989898989896%}
-  100%  {transform: rotate(9deg); left: -29.898989898989896%}
-}
-
-@keyframes leave-galaxy {
-  0%  {transform: rotate(0deg); left: 7.778571428571429%;}
-  2.5%  {transform: rotate(1deg); left: 7.000714285714286%;}
-  5%  {transform: rotate(2deg); left: 6.222857142857144%}
-  7.5%  {transform: rotate(3deg); left: 5.445%}
-  10%  {transform: rotate(6deg); left: 4.667142857142858%}
-  12.5%  {transform: rotate(9deg); left: 3.8892857142857147%}
-  15%  {transform: rotate(12deg); left: 3.111428571428572%}
-  17.5%  {transform: rotate(9deg); left: 2.333571428571429%}
-  20%  {transform: rotate(6deg); left: 1.555714285714286%}
-  22.5%  {transform: rotate(3deg); left: 0.777857142857143%}
-  25%  {transform: rotate(0deg); left: 0px}
-  27.5%  {transform: rotate(0deg); left: -0.777857142857143%;}
-  30%  {transform: rotate(1deg); left: -1.555714285714286%}
-  32.5%  {transform: rotate(2deg); left: -2.333571428571429%}
-  35%  {transform: rotate(3deg); left: -3.111428571428572%}
-  37.5%  {transform: rotate(6deg); left: -4.667142857142858%}
-  40%  {transform: rotate(9deg); left: -6.222857142857144%}
-  42.5%  {transform: rotate(12deg); left: -7.778571428571429%}
-  45%  {transform: rotate(9deg); left: -9.334285714285716%}
-  47.5%  {transform: rotate(6deg); left: -10.89%}
-  50%  {transform: rotate(3deg); left: -12.445714285714288%}
-  52.5%  {transform: rotate(0deg); left: -14.001428571428573%}
-  55%  {transform: rotate(0deg); left: -15.557142857142859%;}
-  57.5%  {transform: rotate(1deg); left: -17.112857142857145%;}
-  60%  {transform: rotate(2deg); left: -18.668571428571433%}
-  62.5%  {transform: rotate(3deg); left: -20.224285714285713%}
-  65%  {transform: rotate(6deg); left: -21.78%}
-  67.5%  {transform: rotate(9deg); left: -23.33571428571429%}
-  70%  {transform: rotate(12deg); left: -24.891428571428577%}
-  72.5%  {transform: rotate(9deg); left: -26.447142857142858%}
-  75%  {transform: rotate(6deg); left: -28.002857142857145%}
-  77.5%  {transform: rotate(3deg); left: -29.558571428571433%}
-  80%  {transform: rotate(0deg); left: -31.114285714285717%}
-  100%  {transform: rotate(9deg); left: -31.114285714285717%}
-}
-
-@keyframes dance {
-    0%  {transform: rotate(0deg);}
-    10%  {transform: rotate(1deg);}
-    20%  {transform: rotate(2deg);}
-    30%  {transform: rotate(3deg);}
-    40%  {transform: rotate(6deg);}
-    50%  {transform: rotate(9deg);}
-    60%  {transform: rotate(12deg);}
-    70%  {transform: rotate(9deg);}
-    80%  {transform: rotate(6deg);}
-    90%  {transform: rotate(3deg);}
-    100%  {transform: rotate(0deg);}
-  } 
-
   #two-hidden {
       display: none;
   }
@@ -721,25 +755,50 @@
     max-width: 80%;
     height: 2.083333333333333%;
     min-height: 2.083333333333333%;
+    animation: 
+    fade-in-and-out 11s linear 0s normal 1 forwards,
+    fade-in-and-out 11s linear 11s normal 1 forwards,
+    fade-in-and-out 11s linear 22s normal 1 forwards,
+    fade-in-and-out 11s linear 33s normal 1 forwards,
+    fade-in-and-out 11s linear 44s normal 1 forwards,
+    fade-in-and-out 11s linear 55s normal 1 forwards,
+    fade-in-and-out 11s linear 66s normal 1 forwards,
+    fade-in-and-out 11s linear 77s normal 1 forwards,
+    fade-in-and-out 11s linear 88s normal 1 forwards,
+    fade-in-and-out 11s linear 99s normal 1 forwards,
+    fade-in-and-out 11s linear 110s normal 1 forwards,
+    fade-in-and-out 11s linear 121s normal 1 forwards,
+    fade-in-and-out 11s linear 132s normal 1 forwards,
+    fade-in-and-out 11s linear 143s normal 1 forwards,
+    fade-in-and-out 11s linear 154s normal 1 forwards,
+    fade-in-and-out 11s linear 165s normal 1 forwards,
+    fade-in-and-out 11s linear 176s normal 1 forwards,
+    fade-in-and-out 11s linear 188s normal 1 forwards;
     /* animation-fill-mode: forwards; */
   }
 
-  #stageTwoLine-change {
-    animation-name: fade-out;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-    max-width: 80%;
-    height: 2.083333333333333%;
-    min-height: 2.083333333333333%;
-  }
 
-  #stageTwoLine-change-back {
-    animation-name: fade-in;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-    max-width: 80%;
-    height: 2.083333333333333%;
-    min-height: 2.083333333333333%;
+  @keyframes fade-in-and-out {
+    0%  {opacity: 1;}
+    10%  {opacity: 1;}
+    20%  {opacity: 1;}
+    30%  {opacity: 0;}
+    40%  {opacity: 0;}
+    50%  {opacity: 0;}
+    60%  {opacity: 0;}
+    70%  {opacity: 0;}
+    80%  {opacity: 0;}
+    90%  {opacity: 0;}
+    100%  {opacity: 0;}
+  }  
+
+
+  #texts-about-cows {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   @media (max-width: 414px) {
@@ -748,36 +807,7 @@
     }
   }
 
-   @keyframes fade-out {
-    0%  {opacity: 1; }
-    3%  {opacity: 0.9;}
-    10%  {opacity: 0.8;}
-    20%  {opacity: 0.7;}
-    30%  {opacity: 0.6;}
-    45%  {opacity: 0.5;}
-    50%  {opacity: 0.4;}
-    60%  {opacity: 0.3;}
-    70%  {opacity: 0.2;}
-    80%  {opacity: 0.1;}
-    90%  {opacity: 0;}
-    100%  {opacity: 0;}
-  }  
-
-  @keyframes fade-in {
-    0%  {opacity: 0; }
-    3%  {opacity: 0.1;}
-    10%  {opacity: 0.2;}
-    20%  {opacity: 0.3;}
-    30%  {opacity: 0.4;}
-    45%  {opacity: 0.5;}
-    50%  {opacity: 0.55;}
-    60%  {opacity: 0.6;}
-    70%  {opacity: 0.7;}
-    80%  {opacity: 0.8;}
-    90%  {opacity: 0.9;}
-    100%  {opacity: 1;}
-  }  
-
+   
   .button-container {
     order: -1;
     height: 65vh;
@@ -800,5 +830,4 @@
   background-color: #794499;
   border: none;
   color: white;
-
 }

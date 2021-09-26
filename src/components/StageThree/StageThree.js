@@ -17,7 +17,6 @@ export const StageThree = () => {
             SWExplanation,
             SWExplanationSpace,
             SWExplanationButtonSpace,
-            codeSWNaive,
             SWExplanationBottomPanel,
             SWCodeSpace
         },

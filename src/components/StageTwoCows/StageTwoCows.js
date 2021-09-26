@@ -4,6 +4,7 @@ import { InfoContext } from '../../InfoProvider'
 import { CowOne } from '../CowOne/CowOne'
 import { CowTwo } from '../CowTwo/CowTwo'
 import { CowThree } from '../CowThree/CowThree'
+import { CowFour } from '../CowFour/CowFour'
 
 export const StageTwoCows = () => {
     const {
@@ -15,16 +16,14 @@ export const StageTwoCows = () => {
             singleWeightOne,
             singleWeightTwo,
             singleWeightThree,
-            cowToDisplayP1,
-            cowToDisplayP2,
-            cowToDisplayP3,
-            firstCow,
-            secondCow,
-            thirdCow,
+            singleWeightFour,
             minus,
             plus,
-            cowInMotion,
-            stageTwoLine
+            maxWeight,
+            stageTwoLine,
+            weightsOfThree,
+            minusValue,
+            plusValue
         },
         redirectSlidingWindow
     } = useContext(InfoContext);
@@ -33,35 +32,29 @@ export const StageTwoCows = () => {
         <div className={(!(cowStages === 2) && "two-hidden")}>
             <div id="texts-about-cows">
                 <p id={(cowStages === 2) && stageTwoLine} className="small-writing">{stageTwoLineOne}{totalWeight}{stageTwoLineTwo}</p>
-                <p className="small-writing" id={minus}>{(firstCow.includes("first-cow")) && ("-" + singleWeightOne)}</p>
-                <p className="small-writing" id={plus}>{(thirdCow.includes("hidden-three")) && ("+" + singleWeightThree)}</p>
+                <p className={singleWeightOne !== "1040kg" ? "small-writing" : "two-hidden"} id={minus}>We subtract the weight of the 1rst cow {minusValue}</p>
+                <p className={singleWeightOne !== "1040kg" ? "small-writing" : "two-hidden"} id={plus}>We add the weight of the new cow {plusValue}</p>
             </div>
-            <div id="cows">
-                <div className="cow-row">
-                    <div className={firstCow}>
-                        <p className="small-writing">{singleWeightOne}</p>
-                        {cowToDisplayP1 === "1" && <CowOne />}
-                        {cowToDisplayP1 === "2" && <CowTwo />}
-                        {cowToDisplayP1 === "3" && <CowThree />}
-                    </div>
-                    <div className={secondCow}>
-                        <p className="small-writing">{singleWeightTwo}</p>
-                        {cowToDisplayP2 === "1" && <CowOne />}
-                        {cowToDisplayP2 === "2" && <CowTwo />}
-                        {cowToDisplayP2 === "3" && <CowThree />}
-                    </div>
-                    <div className={thirdCow}>
-                        <p className="small-writing">{singleWeightThree}</p>
-                        {cowToDisplayP3 === "1" && <CowOne />}
-                        {cowToDisplayP3 === "2" && <CowTwo />}
-                        {cowToDisplayP3 === "3" && <CowThree />}
-                    </div>
+            <div id="cow-rectangle">
+                <div id="cow-1" class="cow-position-test">
+                    {singleWeightOne}
+                    <CowOne />
                 </div>
-                <div className={((!((parseInt((totalWeight.slice(0, 4)), 10) > 3170))) && "two-hidden") || "button-container"}>
-                    <button className="button-stop" onClick={() => redirectSlidingWindow(cowStages + 1)}>Continue</button>
+                <div id="cow-2" class="cow-position-test">
+                    {singleWeightTwo}
+                    <CowTwo />
+                </div>
+                <div id="cow-3" class="cow-position-test">
+                    {singleWeightThree}
+                    <CowThree />
+                </div>
+                <div id="cow-4" class="cow-position-test">
+                    {singleWeightFour}
+                    <CowFour />
                 </div>
             </div>
-        </div >
+            <button id="next-button" onClick={() => redirectSlidingWindow(cowStages + 1)} className={(parseInt(maxWeight.slice(0, 4), 10) < 3170) && "two-hidden"}>Okay, I get it, let's continue</button>
+        </div>
     )
 }
 

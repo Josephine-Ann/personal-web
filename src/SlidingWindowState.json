@@ -1,8 +1,5 @@
 [
     {
-        "cowToDisplayP1": "1",
-        "cowToDisplayP2": "2",
-        "cowToDisplayP3": "3",
         "maxWeight": "3000kg",
         "cow": "cow",
         "buttonPause": false,
@@ -22,9 +19,7 @@
         "singleWeightOne": "900kg",
         "singleWeightTwo": "1100kg",
         "singleWeightThree": "1000kg",
-        "firstCow": "individual-cow distance-one",
-        "secondCow": "individual-cow distance-two",
-        "thirdCow": "individual-cow distance-three"
+        "singleWeightFour": "1050kg"
     },
     {
         "0": "3000kg",
@@ -53,7 +48,7 @@
         "3": ", which is the heaviest weight we have seen so far.",
         "4": "The three cows weigh ",
         "5": ", which doesn't really change anything.",
-        "6": "This is the last set of three cows! We now know that the heaviest set of three cows weighs "
+        "6": "This is the last set of three cows! We now know that the heaviest set of three cows weighs 3545kg, since this three weigh 3425kg."
     },
     {
         "0": "cow hidden",
@@ -80,19 +75,6 @@
         "17": "1040kg",
         "18": "1185kg",
         "19": "1200kg"
-    },
-    {
-        "0": "individual-cow distance-one",
-        "1": "first-cow"
-    },
-    {
-        "0": "individual-cow distance-two",
-        "1": "second-cow"
-    },
-    {
-        "0": "individual-cow distance-three",
-        "1": "third-cow",
-        "2": "hidden-three"
     },
     {
         "1": false,
@@ -167,19 +149,6 @@
         "70": false
     },
     {
-        "0": "individual-cow distance-one-galaxy",
-        "1": "first-cow-galaxy"
-    },
-    {
-        "0": "individual-cow distance-two-galaxy",
-        "1": "second-cow-galaxy"
-    },
-    {
-        "0": "individual-cow distance-three-galaxy",
-        "1": "third-cow-galaxy",
-        "2": "hidden-three-galaxy"
-    },
-    {
         "animationLink": "animation-link-galaxy",
         "animationLinkImage": "animation-link-image-galaxy",
         "firstAnimationLinkImage": "first-animation-link-image-galaxy",
@@ -199,13 +168,7 @@
         "slidingButton": "sliding-button-galaxy",
         "minus": "minus-galaxy",
         "plus": "plus-galaxy",
-        "distanceOne": "distance-one-galaxy",
-        "distanceTwo": "distance-two-galaxy",
-        "distanceThree": "distance-three-galaxy",
         "hiddenThree": "hidden-three-galaxy",
-        "firstCow": "first-cow-galaxy",
-        "secondCow": "second-cow-galaxy",
-        "thirdCow": "third-cow-galaxy",
         "linksContact": "links-contact-galaxy",
         "SWExplanationSpace": "sw-explanation-space-galaxy",
         "SWExplanationButtonSpace": "sw-explanation-button-space-galaxy",
@@ -232,31 +195,12 @@
         "slidingButton": "sliding-button",
         "minus": "minus",
         "plus": "plus",
-        "distanceOne": "distance-one",
-        "distanceTwo": "distance-two",
-        "distanceThree": "distance-three",
         "hiddenThree": "hidden-three",
-        "firstCow": "first-cow",
-        "secondCow": "second-cow",
-        "thirdCow": "third-cow",
         "linksContact": "links-contact",
         "SWExplanationSpace": "sw-explanation-space",
         "SWExplanationButtonSpace": "sw-explanation-button-space",
         "SWCodeSpace": "sw-code-space",
         "SWExplanationBottomPanel": "sw-explanation-bottom-panel"
-    },
-    {
-        "0": "individual-cow distance-one-iphonemax",
-        "1": "first-cow-iphonemax"
-    },
-    {
-        "0": "individual-cow distance-two-iphonemax",
-        "1": "second-cow-iphonemax"
-    },
-    {
-        "0": "individual-cow distance-three-iphonemax",
-        "1": "third-cow-iphonemax",
-        "2": "hidden-three-iphonemax"
     },
     {
         "animationLink": "animation-link-iphonemax",
@@ -279,13 +223,7 @@
         "slidingButton": "sliding-button-iphonemax",
         "minus": "minus-iphonemax",
         "plus": "plus-iphonemax",
-        "distanceOne": "distance-one-iphonemax",
-        "distanceTwo": "distance-two-iphonemax",
-        "distanceThree": "distance-three-iphonemax",
         "hiddenThree": "hidden-three-iphonemax",
-        "firstCow": "first-cow-iphonemax",
-        "secondCow": "second-cow-iphonemax",
-        "thirdCow": "third-cow-iphonemax",
         "linksContact": "links-contact-iphonemax",
         "SWExplanationSpace": "sw-explanation-space-iphonemax",
         "SWExplanationButtonSpace": "sw-explanation-button-space-iphonemax",

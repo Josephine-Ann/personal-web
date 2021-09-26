@@ -9,22 +9,13 @@ var weightsOfThree = SlidingWindowState[1]
 var stageTwoLineArray = SlidingWindowState[2]
 var cowArray = SlidingWindowState[3]
 var singleWeights = SlidingWindowState[4]
-var firstCowArray = SlidingWindowState[5]
-var secondCowArray = SlidingWindowState[6]
-var thirdCowArray = SlidingWindowState[7]
-var individualCows = SlidingWindowState[8]
-var firstCowArrayGalaxy = SlidingWindowState[9]
-var secondCowArrayGalaxy = SlidingWindowState[10]
-var thirdCowArrayGalaxy = SlidingWindowState[11]
-var newClassesGalaxy = SlidingWindowState[12]
-var newClasses = SlidingWindowState[13]
-var firstCowArrayIphoneMax = SlidingWindowState[14]
-var secondCowArrayIphoneMax = SlidingWindowState[15]
-var thirdCowArrayIphoneMax = SlidingWindowState[16]
-var newClassesIphoneMax = SlidingWindowState[17]
-var textExplanation = SlidingWindowState[18]
-var codeNaive = SlidingWindowState[19]
-var codeRefactor = SlidingWindowState[20]
+var individualCows = SlidingWindowState[5]
+var newClassesGalaxy = SlidingWindowState[6]
+var newClasses = SlidingWindowState[7]
+var newClassesIphoneMax = SlidingWindowState[8]
+var textExplanation = SlidingWindowState[9]
+var codeNaive = SlidingWindowState[10]
+var codeRefactor = SlidingWindowState[11]
 
 var cardNoWritingArray = DivideAndConquerState[1]
 var divideAndConquerSingle = DivideAndConquerState[0]
@@ -64,18 +55,10 @@ export class InfoProvider extends React.Component {
             textAnimationDivideAndConquer: textAnimationDivideAndConquer,
             weightsOfThree: weightsOfThree,
             singleWeights: singleWeights,
-            firstCow: slidingStateSingle.firstCow,
-            secondCow: slidingStateSingle.secondCow,
-            thirdCow: slidingStateSingle.thirdCow,
-            firstCowArray: [],
-            secondCowArray: [],
-            thirdCowArray: [],
-            // firstCowArrayGalaxy: firstCowArrayGalaxy,
-            // secondCowArrayGalaxy: secondCowArrayGalaxy,
-            // thirdCowArrayGalaxy: thirdCowArrayGalaxy,
             singleWeightOne: slidingStateSingle.singleWeightOne,
             singleWeightTwo: slidingStateSingle.singleWeightTwo,
             singleWeightThree: slidingStateSingle.singleWeightThree,
+            singleWeightFour: slidingStateSingle.singleWeightFour,
             totalWeight: slidingStateSingle.totalWeight,
             stageTwoLineOne: slidingStateSingle.stageTwoLineOne,
             stageTwoLineTwo: slidingStateSingle.stageTwoLineTwo,
@@ -88,9 +71,6 @@ export class InfoProvider extends React.Component {
             textCowsBefore2: slidingStateSingle.textCowsBefore2,
             textCowsAfter1: slidingStateSingle.textCowsAfter1,
             textCowsAfter2: slidingStateSingle.textCowsBefore2,
-            cowToDisplayP1: slidingStateSingle.cowToDisplayP1,
-            cowToDisplayP2: slidingStateSingle.cowToDisplayP2,
-            cowToDisplayP3: slidingStateSingle.cowToDisplayP3,
             cow: slidingStateSingle.cow,
             individualCows: individualCows,
             buttonPause: slidingStateSingle.buttonPause,
@@ -119,11 +99,10 @@ export class InfoProvider extends React.Component {
             pText: "",
             slidingButton: "",
             minus: "",
+            minusValue: "900kg",
+            plusValue: "1000kg",
             plus: "",
             hiddenThree: "",
-            distanceTwo: "",
-            distanceThree: "",
-            distanceOne: "",
             newClassesGalaxy: newClassesGalaxy,
             newClasses: newClasses,
             newClassesIphoneMax: newClassesIphoneMax,
@@ -193,13 +172,7 @@ export class InfoProvider extends React.Component {
             slidingButton: newClasses.slidingButton,
             minus: newClasses.minus,
             plus: newClasses.plus,
-            firstCow: newClasses.firstCow,
-            secondCow: newClasses.secondCow,
-            thirdCow: newClasses.thirdCow,
             hiddenThree: newClasses.hiddenThree,
-            distanceTwo: newClasses.distanceTwo,
-            distanceThree: newClasses.distanceThree,
-            distanceOne: newClasses.distanceOne,
             linksContact: newClasses.linksContact,
             SWCodeSpace: newClasses.SWCodeSpace
         });
@@ -229,23 +202,14 @@ export class InfoProvider extends React.Component {
     sizeCows = async () => {
         if (this.state.width < 414) {
             this.setState({
-                firstCowArray: firstCowArrayGalaxy,
-                secondCowArray: secondCowArrayGalaxy,
-                thirdCowArray: thirdCowArrayGalaxy,
                 cowInMotion: true
             })
         } else if (this.state.width > 414 && this.state.width < 818) {
             this.setState({
-                firstCowArray: firstCowArrayIphoneMax,
-                secondCowArray: secondCowArrayIphoneMax,
-                thirdCowArray: thirdCowArrayIphoneMax,
                 cowInMotion: true
             })
         } else {
             this.setState({
-                firstCowArray: firstCowArray,
-                secondCowArray: secondCowArray,
-                thirdCowArray: thirdCowArray,
                 cowInMotion: true
             })
         }
@@ -396,132 +360,99 @@ export class InfoProvider extends React.Component {
             maxWeight: slidingStateSingle.maxWeight,
             weightsOfThree: weightsOfThree,
             singleWeights: singleWeights,
-            cowToDisplayP1: slidingStateSingle.cowToDisplayP1,
-            cowToDisplayP2: slidingStateSingle.cowToDisplayP2,
-            cowToDisplayP3: slidingStateSingle.cowToDisplayP3,
             cowInMotion: false,
             slidingButton: newClasses.slidingButton,
             minus: newClasses.minus,
             plus: newClasses.plus,
             hiddenThree: newClasses.hiddenThree,
-            distanceTwo: newClasses.distanceTwo,
-            distanceThree: newClasses.distanceThree,
-            distanceOne: newClasses.distanceOne,
-            firstCow: slidingStateSingle.firstCow,
-            secondCow: slidingStateSingle.secondCow,
-            thirdCow: slidingStateSingle.thirdCow,
             stageTwoLineOne: slidingStateSingle.stageTwoLineOne,
             stageTwoLineTwo: slidingStateSingle.stageTwoLineTwo,
             singleWeightOne: slidingStateSingle.singleWeightOne,
             singleWeightTwo: slidingStateSingle.singleWeightTwo,
             singleWeightThree: slidingStateSingle.singleWeightThree,
+            singleWeightFour: slidingStateSingle.singleWeightFour,
             totalWeight: slidingStateSingle.totalWeight
         })
     }
 
-    cowMovements = async (cowToDisplayP1, cowToDisplayP2, cowToDisplayP3, totalWeight, singleWeightOne, singleWeightTwo, singleWeightThree) => {
-        if (this.state.cowInMotion) {
-            await this.delay(6)
-        }
+    cowMovements = async (totalWeight, weights, minVal, plusVal) => {
         if (this.state.cowInMotion) {
             this.setState({
-                firstCow: this.state.firstCowArray["1"],
-                secondCow: this.state.secondCowArray["1"],
-                thirdCow: this.state.thirdCowArray["1"]
+                minusValue: singleWeights[minVal],
+                plusValue: singleWeights[plusVal]
             })
-        }
-        if (this.state.cowInMotion) {
-            await this.delay(6)
-
-        }
-        if (this.state.cowInMotion) {
-            this.setState({
-                firstCow: this.state.firstCowArray["0"],
-                secondCow: this.state.secondCowArray["0"],
-                thirdCow: this.state.thirdCowArray["2"],
-                cowToDisplayP1: cowToDisplayP1,
-                cowToDisplayP2: cowToDisplayP2,
-                cowToDisplayP3: cowToDisplayP3,
-                singleWeightOne: this.state.singleWeights[singleWeightOne],
-                singleWeightTwo: this.state.singleWeights[singleWeightTwo],
-                singleWeightThree: this.state.singleWeights[singleWeightThree],
-            })
-        }
-        if (this.state.cowInMotion) {
-            if (totalWeight !== "18") {
+            if (this.state.weightsOfThree[totalWeight] === "3425kg") {
                 this.setState({
-                    stageTwoLine: "stageTwoLine-change"
-                })
-            }
-        }
-        if (this.state.cowInMotion) {
-            await this.delay(6)
-
-        }
-        if (this.state.cowInMotion) {
-            this.setState({
-                thirdCow: this.state.thirdCowArray["0"],
-                totalWeight: this.state.weightsOfThree[totalWeight]
-            })
-        }
-        if (this.state.cowInMotion) {
-            if (this.state.totalWeight === "3425kg") {
-                this.setState({
-                    totalWeight: this.state.maxWeight,
+                    totalWeight: "",
                     stageTwoLineOne: stageTwoLineArray["6"],
-                    stageTwoLineTwo: stageTwoLineArray["1"],
+                    stageTwoLineTwo: ""
                 })
-            } else if (this.state.maxWeight < this.state.totalWeight) {
+            } else if ((parseInt(totalWeight, 10)) % 2 !== 0) {
                 this.setState({
-                    maxWeight: this.state.totalWeight,
+                    totalWeight: this.state.weightsOfThree[totalWeight],
+                    maxWeight: this.state.weightsOfThree[totalWeight],
                     stageTwoLineOne: stageTwoLineArray["2"],
                     stageTwoLineTwo: stageTwoLineArray["3"]
                 })
-            } else if (this.state.maxWeight > this.state.totalWeight) {
+            } else if ((parseInt(totalWeight, 10)) % 2 === 0) {
                 this.setState({
+                    totalWeight: this.state.weightsOfThree[totalWeight],
                     stageTwoLineOne: stageTwoLineArray["4"],
                     stageTwoLineTwo: stageTwoLineArray["5"]
                 })
             }
-        }
-        if (this.state.cowInMotion) {
-            this.setState({
-                stageTwoLine: "stageTwoLine"
-            })
         }
     }
 
     stageTwo = async () => {
         await this.sizeCows()
         var cowInMotion = this.state.cowInMotion
-        this.setState({
-            firstCow: this.state.firstCowArray["0"],
-            secondCow: this.state.secondCowArray["0"],
-            thirdCow: this.state.thirdCowArray["2"],
-        })
-        let a = 2
-        let b = 3
-        let c = 1
-        let copy
-        for (var x = 1; x < 18 && cowInMotion; x++) {
-            await this.cowMovements(a.toString(), b.toString(), c.toString(), x.toString(), x.toString(), (x + 1).toString(), (x + 2).toString())
-            copy = a
-            a = b
-            b = c
-            c = copy
+        var weights = {
+            "1": [10, "4"],
+            "2": [1, "4"],
+            "3": [2, "5"],
+            "4": [3, "6"],
+            "5": [4, "7"],
+            "6": [1, "8"],
+            "7": [2, "9"],
+            "8": [3, "10"],
+            "9": [4, "11"],
+            "10": [1, "12"],
+            "11": [2, "13"],
+            "12": [3, "14"],
+            "13": [4, "15"],
+            "14": [1, "16"],
+            "15": [2, "17"],
+            "16": [3, "18"],
+            "17": [3, "18"],
+            "18": [3, "18"]
         }
-        this.setState({
-            firstCow: this.state.firstCowArray["0"],
-            secondCow: this.state.secondCowArray["0"],
-            thirdCow: this.state.thirdCowArray["0"],
-            cowInMotion: false,
-        })
-        await this.delay(6)
+        for (var x = 1; x < 18 && cowInMotion; x++) {
+            if (weights[x][0] === 1) {
+                this.setState({
+                    singleWeightOne: singleWeights[weights[x][1]]
+                })
+            } else if (weights[x][0] === 2) {
+                this.setState({
+                    singleWeightTwo: singleWeights[weights[x][1]]
+                })
+            } else if (weights[x][0] === 3) {
+                this.setState({
+                    singleWeightThree: singleWeights[weights[x][1]]
+                })
+            } else if (weights[x][0] === 4) {
+                this.setState({
+                    singleWeightFour: singleWeights[weights[x][1]]
+                })
+            }
+            await this.delay(5)
+            await this.cowMovements(x.toString(), weights[x], x.toString(), ((parseInt(x, 10)) + 3).toString())
+            await this.delay(6)
+        }
         this.setState({
             stageTwoLineOne: "",
             stageTwoLineTwo: "",
             totalWeight: ""
-
         })
     }
 
