@@ -380,9 +380,11 @@ export class InfoProvider extends React.Component {
             totalWeight: slidingStateSingle.totalWeight
         })
         await this.delay(11);
-        this.setState({
-            cancellingSW: false
-        })
+        if (!this.state.individualCows[this.state.individualCows.length]) {
+            this.setState({
+                cancellingSW: false
+            })
+        }
     }
 
     cowMovements = async (totalWeight, weights, minVal, plusVal) => {
