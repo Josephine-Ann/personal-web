@@ -100,7 +100,7 @@ export class InfoProvider extends React.Component {
             slidingButton: "",
             minus: "",
             minusValue: "900kg",
-            plusValue: "1000kg",
+            plusValue: "1050kg",
             plus: "",
             hiddenThree: "",
             newClassesGalaxy: newClassesGalaxy,
@@ -118,7 +118,8 @@ export class InfoProvider extends React.Component {
             SWCodeSpace: "",
             SWExplanationBottomPanel: "",
             explanationText: explanationText["0"],
-            stageTwoLine: "stageTwoLine"
+            stageTwoLine: "stageTwoLine",
+            cancellingSW: false
         };
     }
 
@@ -331,8 +332,10 @@ export class InfoProvider extends React.Component {
     }
 
     cowsStop = async () => {
-        for (const property in individualCows) {
-            individualCows[property] = false
+        var indCows = this.state.individualCows
+        this.setState({ cancellingSW: true })
+        for (const property in indCows) {
+            indCows[property] = false
         }
         var isWidthComputer = !!(window.innerWidth > 818)
         var isWidthGalaxy = !!(window.innerWidth < 550)
@@ -353,10 +356,13 @@ export class InfoProvider extends React.Component {
             panelText: newClasses.panelText,
             panelTextAnimated: newClasses.panelTextAnimated,
             pText: newClasses.pText,
-            individualCows: individualCows
+            individualCows: indCows
         })
-        await this.delay(7);
+        await this.delay(11);
         this.setState({
+            individualCows: indCows,
+            minusValue: slidingStateSingle.minusValue,
+            plusValue: slidingStateSingle.plusValue,
             maxWeight: slidingStateSingle.maxWeight,
             weightsOfThree: weightsOfThree,
             singleWeights: singleWeights,
@@ -372,6 +378,10 @@ export class InfoProvider extends React.Component {
             singleWeightThree: slidingStateSingle.singleWeightThree,
             singleWeightFour: slidingStateSingle.singleWeightFour,
             totalWeight: slidingStateSingle.totalWeight
+        })
+        await this.delay(11);
+        this.setState({
+            cancellingSW: false
         })
     }
 
@@ -448,12 +458,17 @@ export class InfoProvider extends React.Component {
             await this.delay(5)
             await this.cowMovements(x.toString(), weights[x], x.toString(), ((parseInt(x, 10)) + 3).toString())
             await this.delay(6)
+            if (this.state.cowInMotion === false) {
+                break
+            }
         }
-        this.setState({
-            stageTwoLineOne: "",
-            stageTwoLineTwo: "",
-            totalWeight: ""
-        })
+        if (this.state.cowInMotion) {
+            this.setState({
+                stageTwoLineOne: "",
+                stageTwoLineTwo: "",
+                totalWeight: ""
+            })
+        }
     }
 
     stageThree = async (val) => {

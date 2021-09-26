@@ -10,7 +10,8 @@ export const Animations = () => {
             animationLinkImage,
             firstAnimationLinkImage,
             animationPage,
-            width
+            width,
+            cancellingSW
         }
     } = useContext(InfoContext);
     return (
@@ -20,7 +21,7 @@ export const Animations = () => {
                     <div id="second-animation-link-image" className={animationLinkImage}></div>
                     <p className="animation-link-title">Divide and Conquer</p>
                 </A>
-                <A href="animations/slidingwindow" className={animationLink}>
+                <A href="animations/slidingwindow" className={cancellingSW ? (animationLink + " disabled") : animationLink}>
                     <div id={firstAnimationLinkImage} className={animationLinkImage}></div>
                     <p className="animation-link-title">Sliding Window</p>
                 </A>

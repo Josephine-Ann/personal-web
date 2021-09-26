@@ -19,7 +19,9 @@
         "singleWeightOne": "900kg",
         "singleWeightTwo": "1100kg",
         "singleWeightThree": "1000kg",
-        "singleWeightFour": "1050kg"
+        "singleWeightFour": "1050kg",
+        "minusValue": "900kg",
+        "plusValue": "1050kg"
     },
     {
         "0": "3000kg",

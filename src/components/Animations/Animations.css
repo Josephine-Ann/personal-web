@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 .animation-link-galaxy {
     width: 231px;
     height: 330px;

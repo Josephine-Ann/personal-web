@@ -53,7 +53,7 @@ export const StageTwoCows = () => {
                     <CowFour />
                 </div>
             </div>
-            <button id="next-button" onClick={() => redirectSlidingWindow(cowStages + 1)} className={(parseInt(maxWeight.slice(0, 4), 10) < 3170) && "two-hidden"}>Okay, I get it, let's continue</button>
+            <button id="next-button" onClick={() => redirectSlidingWindow(cowStages + 1)} className={!(parseInt(maxWeight.slice(0, 4), 10) >= 3305) && "two-hidden"}>Okay, I get it, let's continue</button>
         </div>
     )
 }
